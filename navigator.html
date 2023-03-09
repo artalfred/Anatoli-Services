@@ -1,36 +1,87 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+<nav class="navbar navbar-expand-lg container">
+        <div class="container-fluid">
+          <a class="navbar-brand text-light fw-bold" href="#"
+            >ANATOLI SERVICES</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-between"
+            id="navbarNavDropdown"
+            style="margin-left: 6rem"
+          >
+            <ul class="navbar-nav gap-4">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-light fw-semibold font-14px"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-light d-flex align-items-center gap-2 font-14px services"
+                  href="#"
+                  >Services <ion-icon name="chevron-down-outline"></ion-icon
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light font-14px" href="#">Find Jobs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light font-14px" href="#">Customer</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light font-14px" href="#">Contact Us</a>
+              </li>
             </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled">Disabled</a>
-          </li>
+
+            <div class="d-flex gap-3">
+              <button
+                class="button rounded-1 font-14px bg-light text-light btn gap-2 button-trans"
+              >
+                Log in
+              </button>
+              <button class="button rounded-1 font-14px">
+                Create an account
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- DROPDOWN MENU SERVICES -->
+      <div class="dropdown position-absolute" id="dropdown">
+        <div
+          class="position-absolute"
+          style="width: 100%; height: 1.4rem; top: -1.4rem; left: 0rem"
+        ></div>
+        <div
+          class="position-absolute"
+          style="
+            top: -1rem;
+            left: 2rem;
+            background: #fff;
+            height: 1.2rem;
+            width: 2rem;
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+          "
+        ></div>
+        <ul class="d-grid">
+          <li class="py-2 dropdown-bg">Aircon Services</li>
+          <li class="py-2 dropdown-bg">Gardening & Landscpaing</li>
+          <li class="py-2 dropdown-bg">Cleaning Services</li>
+          <li class="py-2 dropdown-bg">Electronics Repair</li>
+          <li class="py-2 dropdown-bg">Other Services</li>
         </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
       </div>
-    </div>
-  </nav>
