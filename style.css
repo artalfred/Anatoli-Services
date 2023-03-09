@@ -1,4 +1,8 @@
 //GENERAL USE
+nav {
+  padding-top: 2rem !important;
+}
+
 .button {
   padding: 0.7rem 2.2rem;
   border: none !important;
