@@ -1,6 +1,9 @@
-//GENERAL USE
-nav {
-  padding-top: 2rem !important;
+button {
+  border: none;
+}
+
+.btn {
+  border: none !important;
 }
 
 .button {
@@ -58,6 +61,10 @@ li {
   font-size: 2.8rem;
 }
 
+.font-sm-title {
+  font-size: 2.4rem;
+}
+
 .text-color-gray {
   color: #444444;
 }
@@ -72,4 +79,313 @@ li {
 
 .img-box-shadow {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+/* HOMEPAGE */
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif !important;
+}
+
+.container {
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+}
+
+nav {
+  padding-top: 2rem !important;
+}
+
+.menu {
+  border: none;
+  box-shadow: none !important;
+}
+
+.menu ion-icon {
+  color: #fff;
+  font-size: 2rem;
+}
+
+/* SECTION 1 */
+.section-1 {
+  height: 55rem;
+  background: linear-gradient(
+    90deg,
+    rgba(16, 12, 88, 1) 20%,
+    rgba(6, 23, 129, 1) 78%
+  );
+  /* background-image: url(../img/background.png); */
+  clip-path: polygon(50% 0%, 100% 0, 100% 100%, 52% 92%, 0 68%, 0 0);
+}
+
+.sectin-1-box {
+  height: 20rem;
+  width: 10rem;
+}
+
+/* DROPDOWN */
+.dropdown {
+  padding: 1rem;
+  height: 14rem;
+  width: 16rem;
+  background-color: #fff;
+  left: 30%;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  display: none;
+  z-index: 2;
+}
+
+.dropdown-bg {
+  padding-left: 1rem;
+}
+
+.dropdown-bg:hover {
+  background-color: #f8f9fa;
+}
+
+.services-mobile {
+  display: none !important;
+}
+
+.dropdown-menu {
+  background-color: transparent;
+  border: none;
+}
+
+/* SECTION 2 */
+.section-2 {
+  margin-top: 4rem;
+  margin-left: 6rem;
+  height: 30rem;
+}
+
+.offer {
+  margin-top: -10rem;
+}
+
+.card {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+
+.services-parent {
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  overflow-y: hidden;
+}
+
+.services-parent::-webkit-scrollbar {
+  display: none;
+}
+
+.services-child {
+  width: 156rem;
+}
+
+.services-content {
+  margin-top: 4rem;
+  height: 26rem;
+  width: 17rem;
+  position: relative;
+}
+
+.services-title {
+  height: 6rem;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  position: absolute;
+  top: 55%;
+  left: 0rem;
+}
+
+.next ion-icon {
+  font-size: 1.8rem;
+  color: #555;
+}
+
+.section-1-title {
+  font-size: 4.2rem;
+}
+
+/* GUIDE */
+.guide {
+  margin-top: 8rem;
+  height: auto;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(16, 12, 88, 1) 20%,
+    rgba(6, 23, 129, 1) 78%
+  );
+}
+
+.guide-steps {
+  height: auto;
+  background-color: blue;
+}
+
+.guide-icons {
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  background-color: #ade8f4;
+}
+
+.guide-icons ion-icon {
+  font-size: 1.2rem;
+  color: blue;
+}
+
+.guide-box {
+  height: 6rem;
+  width: 6rem;
+  background: blue;
+}
+
+/* SECTION 3 */
+.section-3 {
+  margin-top: 4rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.section-3-box {
+  height: 3rem;
+  width: 3.6rem;
+}
+
+.section-3-icons img {
+  height: 1.4rem;
+}
+
+/* FOOTER */
+.footer-font-size {
+  font-size: 18px;
+}
+
+/* ////////////////////////////////////////////// */
+/* MEDIA QUERY */
+@media (max-width: 1399.98px) {
+  .section-2 {
+    margin-left: 2rem;
+  }
+
+  .dropdown {
+    left: 26%;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .nav-bar {
+    margin-left: 4rem !important;
+  }
+
+  .section-1-title {
+    font-size: 3.6rem;
+  }
+
+  .dropdown {
+    left: 28%;
+  }
+}
+
+@media (max-width: 1012.98px) {
+  .nav-bar {
+    margin-left: 2rem !important;
+  }
+
+  .section-1-title {
+    padding: 0rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .nav-bar {
+    margin-left: 0rem !important;
+    position: absolute;
+    top: 6rem;
+    left: 0;
+    width: 100%;
+    padding: 0rem 1rem 1rem 1rem;
+    background: linear-gradient(
+      90deg,
+      rgba(16, 12, 88, 1) 20%,
+      rgba(6, 23, 129, 1) 78%
+    );
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+  }
+
+  .nav-button {
+    margin-top: 2rem;
+  }
+
+  .btn-next-prev {
+    display: none !important;
+  }
+
+  .services {
+    display: none !important;
+  }
+
+  .services-mobile {
+    display: block !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .section-3-image {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .section-1-title {
+    font-size: 2.8rem;
+  }
+
+  .guide {
+    margin-top: 0rem;
+  }
+}
+
+@media (max-width: 440.98px) {
+  .section-1-title {
+    font-size: 2.4rem;
+  }
+
+  .button {
+    padding: 0.7rem 1.2rem !important;
+  }
+
+  .font-14px {
+    font-size: 12px !important;
+  }
+
+  .section-2 {
+    margin-left: 1rem;
+    margin-top: 6rem;
+  }
+
+  .font-title {
+    font-size: 1.8rem !important;
+  }
+}
+
+@media (max-width: 380.98px) {
+  .section-1-title {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 350.98px) {
+  .section-1-title {
+    font-size: 2rem;
+  }
 }
