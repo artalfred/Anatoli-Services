@@ -17,3 +17,34 @@ dropdown.addEventListener("mouseover", function () {
 dropdown.addEventListener("mouseleave", function () {
   dropdown.style.display = "none";
 });
+
+// SCROLL HORIZONTAL EVENT LISTENER SECTION 2 HOMEPAGE
+const next = document.getElementById("next");
+const prev = document.getElementById("prev");
+
+next.addEventListener("click", function () {
+  document.querySelector(".services-parent").scrollLeft += 280;
+});
+
+prev.addEventListener("click", function () {
+  document.querySelector(".services-parent").scrollLeft += -280;
+});
+
+$(document).ready(function () {
+  $.ajax({
+    url: "navigator.html",
+
+    caches: false,
+    success: function (data) {
+      $("#navContainer").html(data);
+    },
+  });
+  $.ajax({
+    url: "footer.html",
+
+    caches: false,
+    success: function (data) {
+      $("#footerContainer").html(data);
+    },
+  });
+});
