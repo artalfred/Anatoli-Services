@@ -1,0 +1,18 @@
+footer {
+  margin-top: 4rem;
+}
+
+.footer-icons ion-icon {
+  font-size: 1.6rem;
+}
+
+.subscribe {
+  margin-top: 4rem;
+  padding-bottom: 6rem;
+  height: auto;
+}
+
+.subscribe-email {
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
