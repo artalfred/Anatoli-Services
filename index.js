@@ -1,20 +1,15 @@
 const container = document.getElementById("footer");
 const navigation = document.getElementById("navigation");
 
-
 fetch("./navigator.html")
-  .then(response => response.text())
-  .then(html => navigation.innerHTML = html)
-  .catch(error => console.error(error));
-
-
-
+  .then((response) => response.text())
+  .then((html) => (navigation.innerHTML = html))
+  .catch((error) => console.error(error));
 
 fetch("./footer.html")
-  .then(response => response.text())
-  .then(html => container.innerHTML = html)
-  .catch(error => console.error(error));
-
+  .then((response) => response.text())
+  .then((html) => (container.innerHTML = html))
+  .catch((error) => console.error(error));
 
 //FOR DROPDOWN MENU NAVIGATION
 const dropdown = document.getElementById("dropdown");
