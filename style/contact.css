@@ -1,5 +1,6 @@
 .contact-us {
   box-shadow: none;
+  background: none !important;
 }
 
 .info {
@@ -11,6 +12,5 @@ input {
 }
 
 .details ion-icon {
-  font-size: 1.4rem;
   color: blue;
 }
