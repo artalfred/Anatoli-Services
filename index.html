@@ -7,9 +7,14 @@
 
     <!-- BOOTSTRAP -->
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap-grid.min.css">
-    
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap-grid.min.css"
+    />
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
@@ -17,11 +22,12 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/footer.css" />
+
     <!-- GOOGLE FONT -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
 
@@ -37,694 +43,532 @@
     <!-- SECTION 1 -->
     <section class="section-1 border-bottom position-relative">
       <!-- NAVIGATION -->
-      <nav class="navbar navbar-expand-lg container-xxl">
-        <div class="container-fluid">
-          <a class="navbar-brand text-light fw-bold" href="#"
-            >ANATOLI SERVICES</a
-          >
-          <button
-            class="navbar-toggler menu"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <ion-icon name="menu-outline"></ion-icon>
-          </button>
-          <div
-            class="collapse navbar-collapse justify-content-between nav-bar"
-            id="navbarNavDropdown"
-            style="margin-left: 6rem; z-index: 1"
-          >
-            <ul class="navbar-nav gap-4">
-              <li class="nav-item">
-                <a
-                  class="nav-link text-light fw-semibold font-14px"
-                  aria-current="page"
-                  href="#"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item" style="margin-right: -1.8rem">
-                <a
-                  class="nav-link text-light d-flex align-items-center gap-2 font-14px services"
-                  href="#"
-                  >Services <ion-icon name="chevron-down-outline"></ion-icon
-                ></a>
-              </li>
 
-              <!-- DROPDOWN MOBILE -->
-              <div class="dropdown-mobile">
-                <a
-                  class="nav-link text-light d-flex align-items-center gap-2 font-14px services-mobile"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  style="margin-top: -1.4rem"
-                >
-                  Services <ion-icon name="chevron-down-outline"></ion-icon>
-                </a>
 
-                <ul class="dropdown-menu">
-                  <li style="margin-top: 1.4rem">
-                    <a
-                      class="dropdown-item text-light font-14px border-bottom"
-                      style="width: 11rem"
-                      href="#"
-                      >Aircon Services</a
-                    >
-                  </li>
-                  <li style="margin-top: 1.4rem">
-                    <a
-                      class="dropdown-item text-light font-14px border-bottom"
-                      style="width: 11rem"
-                      href="#"
-                      >Gardening & Landscpaing</a
-                    >
-                  </li>
-                  <li style="margin-top: 1.4rem">
-                    <a
-                      class="dropdown-item text-light font-14px border-bottom"
-                      style="width: 11rem"
-                      href="#"
-                      >Cleaning Services</a
-                    >
-                  </li>
-                  <li style="margin-top: 1.4rem">
-                    <a
-                      class="dropdown-item text-light font-14px border-bottom"
-                      style="width: 11rem"
-                      href="#"
-                      >Electronics Repair</a
-                    >
-                  </li>
-                  <li style="margin-top: 1.4rem">
-                    <a
-                      class="dropdown-item text-light font-14px border-bottom"
-                      style="width: 11rem"
-                      href="#"
-                      >Other Services</a
-                    >
-                  </li>
-                </ul>
-              </div>
+      <div id="navigation">
 
-              <li class="nav-item">
-                <a class="nav-link text-light font-14px" href="#">Find Jobs</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light font-14px" href="#">Customer</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light font-14px" href="#">Contact Us</a>
-              </li>
-            </ul>
-
-            <div class="d-flex gap-3 nav-button">
-              <button
-                class="button rounded-1 font-14px bg-light text-light btn gap-2 button-trans"
-              >
-                Log in
-              </button>
-              <button class="button rounded-1 font-14px">
-                Create an account
-              </button>
-            </div>
-          </div>
-        </div>
-      </nav>
-
-      <!-- DROPDOWN MENU SERVICES -->
-      <div class="dropdown position-absolute" id="dropdown">
-        <div
-          class="position-absolute"
-          style="width: 100%; height: 1.4rem; top: -1.4rem; left: 0rem"
-        ></div>
-        <div
-          class="position-absolute"
-          style="
-            top: -1rem;
-            left: 2rem;
-            background: #fff;
-            height: 1.2rem;
-            width: 2rem;
-            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-          "
-        ></div>
-        <ul class="d-grid">
-          <li class="py-2 dropdown-bg">Aircon Services</li>
-          <li class="py-2 dropdown-bg">Gardening & Landscpaing</li>
-          <li class="py-2 dropdown-bg">Cleaning Services</li>
-          <li class="py-2 dropdown-bg">Electronics Repair</li>
-          <li class="py-2 dropdown-bg">Other Services</li>
-        </ul>
       </div>
+ 
 
-      <div class="container-xxl">
+      <div>
         <h1
           class="text-center text-light fw-bold section-1-title"
           style="margin-top: 12rem"
         >
-          Helping You Land a
-          <span class="d-block">Job and Provide</span> Services
+          Helping You Land a Job and
+          <span class="d-block">Provide Services</span>
         </h1>
         <div class="d-flex gap-3 justify-content-center mt-4">
           <button
-            class="button rounded-1 font-14px bg-light text-light btn gap-2 button-trans"
+            class="button rounded-1 font-16px bg-light text-light btn gap-2 btn-trans"
           >
-            LEARN MORE
+            Learn More
           </button>
           <button
-            class="button rounded-1 font-14px bg-light text-dark btn gap-2 d-flex align-items-center"
+            class="btn btn-primary rounded-1 font-16px text-light btn gap-2 d-flex align-items-center"
           >
-            GET STARTED <ion-icon name="arrow-forward-outline"></ion-icon>
+            Get Started
+            <span class="arrow d-flex align-items-center">
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </span>
           </button>
         </div>
       </div>
     </section>
 
-    <!-- SECTION 2 -->
-    <section class="section-2 py-2">
-      <div class="offer">
-        <h1 class="fs-2 fw-bold">OUR SERVICES</h1>
+    <main class="container-xxl">
+      <!-- SECTION 2 -->
+      <section class="section-2 py-2">
+        <div class="offer">
+          <h1 class="font-sm-title fw-bold section-2-title">Our Services</h1>
 
-        <div class="services-parent">
-          <div class="services-child d-flex gap-4">
-            <div class="card services-content" style="width: 18rem">
-              <img src="./img/section-2/1.svg" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
+          <div class="services-parent row gy-3">
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="card">
+                <img
+                  src="./img/services/1.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body py-3 px-2 py-3 px-1">
+                  <h1 class="fs-4 fw-semibold">
+                    Professional Air Conditioning Services
+                  </h1>
+                </div>
               </div>
             </div>
-            <div class="card services-content" style="width: 18rem">
-              <img src="./img/section-2/2.svg" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="card">
+                <img
+                  src="./img/services/2.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body py-3 px-2">
+                  <h1 class="fs-4 fw-semibold">
+                    Professional Gardening Services
+                  </h1>
+                </div>
               </div>
             </div>
-            <div class="card services-content" style="width: 18rem">
-              <img src="./img/section-2/3.svg" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="card">
+                <img
+                  src="./img/services/3.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body py-3 px-2">
+                  <h1 class="fs-4 fw-semibold">
+                    Professional Cleaning Services
+                  </h1>
+                </div>
               </div>
             </div>
-            <div class="card services-content" style="width: 18rem">
-              <img src="./img/section-2/1.svg" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="card">
+                <img
+                  src="./img/services/4.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body py-3 px-2">
+                  <h1 class="fs-4 fw-semibold">
+                    Expert Electronic Repair Services
+                  </h1>
+                </div>
               </div>
             </div>
-            <div class="card services-content" style="width: 18rem">
-              <img src="./img/section-2/1.svg" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
+          </div>
+
+          <div class="row justify-content-between align-items-center mt-5">
+            <div class="col-12 col-md-8">
+              <p class="p-color font-16px">
+                We offer a variety of services to ensure that your home or
+                business is clean and comfortable all year round. Our team of
+                experienced professionals is dedicated to providing you with
+                high-quality services that are tailored to meet your specific
+                needs.
+              </p>
             </div>
-            <div class="card services-content" style="width: 18rem">
-              <img src="./img/section-2/1.svg" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
-            </div>
-            <div class="card services-content" style="width: 18rem">
-              <img src="./img/section-2/1.svg" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
-            </div>
-            <div class="card services-content" style="width: 18rem">
-              <img src="./img/section-2/1.svg" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
+
+            <div
+              class="col-12 col-md-4 d-flex justify-content-end services-btn"
+            >
+              <a
+                href="./services.html"
+                class="d-flex align-items-center gap-3 fw-normal border py-2 px-4 rounded-5"
+                >See More <ion-icon name="arrow-forward-sharp"></ion-icon
+              ></a>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="d-flex gap-4 justify-content-center mt-5 btn-next-prev">
-        <button class="btn btn-light next d-flex align-items-center" id="prev">
-          <ion-icon name="chevron-back"></ion-icon>
-        </button>
-        <button class="btn btn-light next d-flex align-items-center" id="next">
-          <ion-icon name="chevron-forward"></ion-icon>
-        </button>
-      </div>
-    </section>
-
-    <!-- ADS GUIDE -->
-    <div class="guide py-5 px-3">
-      <div class="container-xxl">
-        <h1 class="font-sm-title text-light fw-bold">THE PROCESS IS SIMPLE</h1>
-        <p class="text-light" style="width: 25rem">
-          You just need 4 steps process to get your dream jobs with the help of
-          anatoli.
-        </p>
-
-        <div class="row gy-4 mt-4">
-          <div class="col-sm-6 col-md-6 col-lg-3">
-            <div class="guide-steps py-4 px-4 rounded-4">
-              <div
-                class="guide-icons rounded-4 d-flex justify-content-center align-items-center"
-                style="height: 3rem; width: 3rem"
-              >
-                <ion-icon name="person-add-outline"></ion-icon>
-              </div>
-              <h6 class="text-light mt-2 fw-semibold mt-4">Registration</h6>
-              <p class="text-light mt-4">
-                Register your personal identity on this platform to access
-                features.
-              </p>
+      <!-- SECTION 3 -->
+      <section class="section-3">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-6 col-lg-6 d-grid section-3-image">
+            <div>
+              <img class="img-fluid" src="./img/job-img.svg" alt="image" />
             </div>
           </div>
-          <div class="col-sm-6 col-md-6 col-lg-3">
-            <div class="guide-steps py-4 px-4 rounded-4 bg-light">
-              <div
-                class="guide-icons rounded-4 d-flex justify-content-center align-items-center"
-                style="height: 3rem; width: 3rem"
-              >
-                <ion-icon name="person-outline"></ion-icon>
-              </div>
-              <h6 class="text-dark mt-2 fw-semibold mt-4">Edit your profile</h6>
-              <p class="text-dark mt-4">
-                Register your personal identity on this platform to access
-                features.
-              </p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-6 col-lg-3">
-            <div class="guide-steps py-4 px-4 rounded-4 bg-light">
-              <div
-                class="guide-icons rounded-4 d-flex justify-content-center align-items-center"
-                style="height: 3rem; width: 3rem"
-              >
-                <ion-icon name="newspaper-outline"></ion-icon>
-              </div>
-              <h6 class="text-dark mt-2 fw-semibold mt-4">
-                Upload your resume
-              </h6>
-              <p class="text-dark mt-4">
-                Register your personal identity on this platform to access
-                features.
-              </p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-6 col-lg-3">
-            <div class="guide-steps py-4 px-4 rounded-4 bg-light">
-              <div
-                class="guide-icons rounded-4 d-flex justify-content-center align-items-center"
-                style="height: 3rem; width: 3rem"
-              >
-                <ion-icon name="search-outline"></ion-icon>
-              </div>
-              <h6 class="text-dark mt-2 fw-semibold mt-4">Search & find job</h6>
-              <p class="text-dark mt-4">
-                Register your personal identity on this platform to access
-                features.
-              </p>
-            </div>
+          <div class="col-12 col-md-6 col-lg-6">
+            <h1 class="fw-bold font-title">
+              FIND THE <span class="d-block">MOST EXCITING</span
+              ><span class="d-block">COMPANY JOBS</span>
+            </h1>
+            <p class="card-text p-color font-16px mt-4">
+              We Are Gradually Adding New Functionality And We Welcome Your
+              Suggestions And Feedback. Some quick example text to build on the
+              card title and make up the bulk of the card's content.
+            </p>
+
+            <ul class="d-grid gap-3 mt-4">
+              <li class="d-flex align-items-center gap-3 section-3-icons">
+                <img
+                  class="img-fluid"
+                  src="./img/icons/check.png"
+                  alt="check"
+                />
+                We pride ourselves on service excellence.
+              </li>
+              <li class="d-flex align-items-center gap-3 section-3-icons">
+                <img
+                  class="img-fluid"
+                  src="./img/icons/check.png"
+                  alt="check"
+                />
+                We strive to be experts, and we never stop learning.
+              </li>
+              <li class="d-flex align-items-center gap-3 section-3-icons">
+                <img
+                  class="img-fluid"
+                  src="./img/icons/check.png"
+                  alt="check"
+                />
+                We're always improving our service.
+              </li>
+              <li class="d-flex align-items-center gap-3 section-3-icons">
+                <img
+                  class="img-fluid"
+                  src="./img/icons/check.png"
+                  alt="check"
+                />
+                We operate with trust and integrity, to protect and grow your
+                business.
+              </li>
+            </ul>
+
+            <button
+              class="btn btn-primary rounded-1 font-16px text-light gap-2 d-flex align-items-center mt-5"
+            >
+              FIND NOW
+            </button>
           </div>
         </div>
-      </div>
-    </div>
 
-    <!-- SECTION 3 -->
-    <section class="section-3 container-xxl position-relative">
-      <div class="row align-items-center">
-        <div class="col-12 col-md-6 col-lg-6 d-grid section-3-image">
-          <div>
-            <img class="img-fluid" src="./img/job-img.svg" alt="image" />
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-6">
-          <h1 class="fw-bold font-title">
-            FIND THE <span class="d-block">MOST EXCITING</span
-            ><span class="d-block">COMPANY JOBS</span>
+        <div class="row gy-4" style="margin-top: 8rem; margin-bottom: 4rem">
+          <h1 class="font-title fw-bold text-center">
+            Explore The Most In-Demand<span class="d-block" style="color: blue">
+              Categories</span
+            >
           </h1>
-          <p class="card-text text-paragraph-color mt-4">
-            We Are Gradually Adding New Functionality And We Welcome Your
-            Suggestions And Feedback. Some quick example text to build on the
-            card title and make up the bulk of the card's content.
-          </p>
 
-          <ul class="d-grid gap-3 mt-4">
-            <li class="d-flex align-items-center gap-3 section-3-icons">
-              <img class="img-fluid" src="./img/icons/check.png" alt="check" />
-              We pride ourselves on service excellence.
-            </li>
-            <li class="d-flex align-items-center gap-3 section-3-icons">
-              <img class="img-fluid" src="./img/icons/check.png" alt="check" />
-              We strive to be experts, and we never stop learning.
-            </li>
-            <li class="d-flex align-items-center gap-3 section-3-icons">
-              <img class="img-fluid" src="./img/icons/check.png" alt="check" />
-              We're always improving our service.
-            </li>
-            <li class="d-flex align-items-center gap-3 section-3-icons">
-              <img class="img-fluid" src="./img/icons/check.png" alt="check" />
-              We operate with trust and integrity, to protect and grow your
-              business.
-            </li>
-          </ul>
+          <div class="col-sm-6 col-md-6 col-lg-4">
+            <div class="card px-4 py-4 border-0">
+              <div class="card-body d-flex align-items-center gap-3 px-0 py-0">
+                <div class="section-3-box">
+                  <img
+                    class="img-fluid"
+                    src="./img/icons/accenture.png"
+                    alt="accenture"
+                    style="height: 3rem"
+                  />
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <h5 class="card-title fs-5 fw-semibold text-dark">
+                    Facebook
+                    <span
+                      class="d-block font-14px text-muted mt-2 fw-normal d-flex align-items-center gap-2"
+                      ><ion-icon name="time-outline"></ion-icon> 7 hours
+                      ago</span
+                    >
+                  </h5>
+                </div>
+              </div>
 
+              <div class="mt-3">
+                <h5 class="fw-bold">Full Stack Developer</h5>
+                <span
+                  class="d-block d-flex align-items-center gap-2 mt-3 font-14px text-muted"
+                >
+                  <ion-icon name="clipboard-sharp"></ion-icon>Full time
+                  <ion-icon name="home"></ion-icon>Remote</span
+                >
+                <p class="mt-2 p-color font-16px">
+                  We are looking for a senior UI UX designer
+                  <span class="d-block">for aour design team.</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-4">
+            <div class="card px-4 py-4 border-0">
+              <div class="card-body d-flex align-items-center gap-3 px-0 py-0">
+                <div class="section-3-box">
+                  <img
+                    class="img-fluid"
+                    src="./img/icons/accenture.png"
+                    alt="accenture"
+                    style="height: 3rem"
+                  />
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <h5 class="card-title fs-5 fw-semibold text-dark">
+                    Facebook
+                    <span
+                      class="d-block font-14px text-muted mt-2 fw-normal d-flex align-items-center gap-2"
+                      ><ion-icon name="time-outline"></ion-icon> 7 hours
+                      ago</span
+                    >
+                  </h5>
+                </div>
+              </div>
+
+              <div class="mt-3">
+                <h5 class="fw-bold">Full Stack Developer</h5>
+                <span
+                  class="d-block d-flex align-items-center gap-2 mt-3 font-14px text-muted"
+                >
+                  <ion-icon name="clipboard-sharp"></ion-icon>Full time
+                  <ion-icon name="home"></ion-icon>Remote</span
+                >
+                <p class="mt-2 p-color font-16px">
+                  We are looking for a senior UI UX designer
+                  <span class="d-block">for aour design team.</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-4">
+            <div class="card px-4 py-4 border-0">
+              <div class="card-body d-flex align-items-center gap-3 px-0 py-0">
+                <div class="section-3-box">
+                  <img
+                    class="img-fluid"
+                    src="./img/icons/accenture.png"
+                    alt="accenture"
+                    style="height: 3rem"
+                  />
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <h5 class="card-title fs-5 fw-semibold text-dark">
+                    Facebook
+                    <span
+                      class="d-block font-14px text-muted mt-2 fw-normal d-flex align-items-center gap-2"
+                      ><ion-icon name="time-outline"></ion-icon> 7 hours
+                      ago</span
+                    >
+                  </h5>
+                </div>
+              </div>
+
+              <div class="mt-3">
+                <h5 class="fw-bold">Full Stack Developer</h5>
+                <span
+                  class="d-block d-flex align-items-center gap-2 mt-3 font-14px text-muted"
+                >
+                  <ion-icon name="clipboard-sharp"></ion-icon>Full time
+                  <ion-icon name="home"></ion-icon>Remote</span
+                >
+                <p class="mt-2 p-color font-16px">
+                  We are looking for a senior UI UX designer
+                  <span class="d-block">for aour design team.</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-4">
+            <div class="card px-4 py-4 border-0">
+              <div class="card-body d-flex align-items-center gap-3 px-0 py-0">
+                <div class="section-3-box">
+                  <img
+                    class="img-fluid"
+                    src="./img/icons/accenture.png"
+                    alt="accenture"
+                    style="height: 3rem"
+                  />
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <h5 class="card-title fs-5 fw-semibold text-dark">
+                    Facebook
+                    <span
+                      class="d-block font-14px text-muted mt-2 fw-normal d-flex align-items-center gap-2"
+                      ><ion-icon name="time-outline"></ion-icon> 7 hours
+                      ago</span
+                    >
+                  </h5>
+                </div>
+              </div>
+
+              <div class="mt-3">
+                <h5 class="fw-bold">Full Stack Developer</h5>
+                <span
+                  class="d-block d-flex align-items-center gap-2 mt-3 font-14px text-muted"
+                >
+                  <ion-icon name="clipboard-sharp"></ion-icon>Full time
+                  <ion-icon name="home"></ion-icon>Remote</span
+                >
+                <p class="mt-2 p-color font-16px">
+                  We are looking for a senior UI UX designer
+                  <span class="d-block">for aour design team.</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-4">
+            <div class="card px-4 py-4 border-0">
+              <div class="card-body d-flex align-items-center gap-3 px-0 py-0">
+                <div class="section-3-box">
+                  <img
+                    class="img-fluid"
+                    src="./img/icons/accenture.png"
+                    alt="accenture"
+                    style="height: 3rem"
+                  />
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <h5 class="card-title fs-5 fw-semibold text-dark">
+                    Facebook
+                    <span
+                      class="d-block font-14px text-muted mt-2 fw-normal d-flex align-items-center gap-2"
+                      ><ion-icon name="time-outline"></ion-icon> 7 hours
+                      ago</span
+                    >
+                  </h5>
+                </div>
+              </div>
+
+              <div class="mt-3">
+                <h5 class="fw-bold">Full Stack Developer</h5>
+                <span
+                  class="d-block d-flex align-items-center gap-2 mt-3 font-14px text-muted"
+                >
+                  <ion-icon name="clipboard-sharp"></ion-icon>Full time
+                  <ion-icon name="home"></ion-icon>Remote</span
+                >
+                <p class="mt-2 p-color font-16px">
+                  We are looking for a senior UI UX designer
+                  <span class="d-block">for aour design team.</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-4">
+            <div class="card px-4 py-4 border-0">
+              <div class="card-body d-flex align-items-center gap-3 px-0 py-0">
+                <div class="section-3-box">
+                  <img
+                    class="img-fluid"
+                    src="./img/icons/accenture.png"
+                    alt="accenture"
+                    style="height: 3rem"
+                  />
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <h5 class="card-title fs-5 fw-semibold text-dark">
+                    Facebook
+                    <span
+                      class="d-block font-14px text-muted mt-2 fw-normal d-flex align-items-center gap-2"
+                      ><ion-icon name="time-outline"></ion-icon> 7 hours
+                      ago</span
+                    >
+                  </h5>
+                </div>
+              </div>
+
+              <div class="mt-3">
+                <h5 class="fw-bold">Full Stack Developer</h5>
+                <span
+                  class="d-block d-flex align-items-center gap-2 mt-3 smaller-font text-muted"
+                >
+                  <ion-icon name="clipboard-sharp"></ion-icon>Full time
+                  <ion-icon name="home"></ion-icon>Remote</span
+                >
+                <p class="mt-2 p-color font-16px">
+                  We are looking for a senior UI UX designer
+                  <span class="d-block">for aour design team.</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center" style="margin-top: 6rem">
           <button
-            class="button rounded-1 font-14px text-light btn gap-2 d-flex align-items-center button-blue mt-5"
+            class="btn btn-primary rounded-1 font-16px d-flex align-items-center gap-2"
           >
-            GET STARTED <ion-icon name="arrow-forward-outline"></ion-icon>
+            View All Jobs
           </button>
         </div>
-      </div>
-
-      <div class="row gy-4" style="margin-top: 8rem">
-        <h1 class="font-sm-title fw-bold">
-          LATEST <span style="color: blue">JOBS</span>
-        </h1>
-
-        <div class="col-sm-6 col-md-6 col-lg-4">
-          <div class="card px-4 py-4 border-0">
-            <div class="card-body d-flex gap-3 px-0 py-0">
-              <div class="section-3-box">
-                <img
-                  class="img-fluid"
-                  src="./img/icons/accenture.png"
-                  alt="accenture"
-                />
-              </div>
-              <div>
-                <h5 class="card-title fs-6 fw-semibold text-dark">
-                  Service now Senior Software Engineer (HRSD)
-                </h5>
-                <p class="card-text text-paragraph-color font-14px">
-                  NewRocket - Anywhere
-                </p>
-              </div>
-            </div>
-            <div>
-              <span
-                class="d-block d-flex align-items-center gap-2 mt-4 smaller-font text-muted"
-                ><ion-icon name="time-outline"></ion-icon> 7 hours ago
-                <ion-icon name="clipboard-sharp"></ion-icon>Full time
-                <ion-icon name="home"></ion-icon>Remote</span
-              >
-              <p class="mt-2 text-paragraph-color">
-                We are looking for a senior UI UX designer
-                <span class="d-block">for aour design team.</span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-6 col-lg-4">
-          <div class="card px-4 py-4 border-0">
-            <div class="card-body d-flex gap-3 px-0 py-0">
-              <div class="section-3-box">
-                <img
-                  class="img-fluid"
-                  src="./img/icons/analysis.png"
-                  alt="analysis"
-                />
-              </div>
-              <div>
-                <h5 class="card-title fs-6 fw-semibold text-dark">
-                  Service now Senior Software Engineer (HRSD)
-                </h5>
-                <p class="card-text text-paragraph-color font-14px">
-                  NewRocket - Anywhere
-                </p>
-              </div>
-            </div>
-            <div>
-              <span
-                class="d-block d-flex align-items-center gap-2 mt-4 smaller-font text-muted"
-                ><ion-icon name="time-outline"></ion-icon> 7 hours ago
-                <ion-icon name="clipboard-sharp"></ion-icon>Full time
-                <ion-icon name="home"></ion-icon>Remote</span
-              >
-              <p class="mt-2 text-paragraph-color">
-                We are looking for a senior UI UX designer
-                <span class="d-block">for aour design team.</span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-6 col-lg-4">
-          <div class="card px-4 py-4 border-0">
-            <div class="card-body d-flex gap-3 px-0 py-0">
-              <div class="section-3-box">
-                <img
-                  class="img-fluid"
-                  src="./img/icons/huawei.png"
-                  alt="analysis"
-                />
-              </div>
-              <div>
-                <h5 class="card-title fs-6 fw-semibold text-dark">
-                  Service now Senior Software Engineer (HRSD)
-                </h5>
-                <p class="card-text text-paragraph-color font-14px">
-                  NewRocket - Anywhere
-                </p>
-              </div>
-            </div>
-            <div>
-              <span
-                class="d-block d-flex align-items-center gap-2 mt-4 smaller-font text-muted"
-                ><ion-icon name="time-outline"></ion-icon> 7 hours ago
-                <ion-icon name="clipboard-sharp"></ion-icon>Full time
-                <ion-icon name="home"></ion-icon>Remote</span
-              >
-              <p class="mt-2 text-paragraph-color">
-                We are looking for a senior UI UX designer
-                <span class="d-block">for aour design team.</span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-6 col-lg-4">
-          <div class="card px-4 py-4 border-0">
-            <div class="card-body d-flex gap-3 px-0 py-0">
-              <div class="section-3-box">
-                <img
-                  class="img-fluid"
-                  src="./img/icons/microsoft.png"
-                  alt="analysis"
-                />
-              </div>
-              <div>
-                <h5 class="card-title fs-6 fw-semibold text-dark">
-                  Service now Senior Software Engineer (HRSD)
-                </h5>
-                <p class="card-text text-paragraph-color font-14px">
-                  NewRocket - Anywhere
-                </p>
-              </div>
-            </div>
-            <div>
-              <span
-                class="d-block d-flex align-items-center gap-2 mt-4 smaller-font text-muted"
-                ><ion-icon name="time-outline"></ion-icon> 7 hours ago
-                <ion-icon name="clipboard-sharp"></ion-icon>Full time
-                <ion-icon name="home"></ion-icon>Remote</span
-              >
-              <p class="mt-2 text-paragraph-color">
-                We are looking for a senior UI UX designer
-                <span class="d-block">for aour design team.</span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-6 col-lg-4">
-          <div class="card px-4 py-4 border-0">
-            <div class="card-body d-flex gap-3 px-0 py-0">
-              <div class="section-3-box">
-                <img
-                  class="img-fluid"
-                  src="./img/icons/windows.png"
-                  alt="analysis"
-                />
-              </div>
-              <div>
-                <h5 class="card-title fs-6 fw-semibold text-dark">
-                  Service now Senior Software Engineer (HRSD)
-                </h5>
-                <p class="card-text text-paragraph-color font-14px">
-                  NewRocket - Anywhere
-                </p>
-              </div>
-            </div>
-            <div>
-              <span
-                class="d-block d-flex align-items-center gap-2 mt-4 smaller-font text-muted"
-                ><ion-icon name="time-outline"></ion-icon> 7 hours ago
-                <ion-icon name="clipboard-sharp"></ion-icon>Full time
-                <ion-icon name="home"></ion-icon>Remote</span
-              >
-              <p class="mt-2 text-paragraph-color">
-                We are looking for a senior UI UX designer
-                <span class="d-block">for aour design team.</span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-6 col-lg-4">
-          <div class="card px-4 py-4 border-0">
-            <div class="card-body d-flex gap-3 px-0 py-0">
-              <div class="section-3-box">
-                <img
-                  class="img-fluid"
-                  src="./img/icons/joomla.png"
-                  alt="analysis"
-                />
-              </div>
-              <div>
-                <h5 class="card-title fs-6 fw-semibold text-dark">
-                  Service now Senior Software Engineer (HRSD)
-                </h5>
-                <p class="card-text text-paragraph-color font-14px">
-                  NewRocket - Anywhere
-                </p>
-              </div>
-            </div>
-            <div>
-              <span
-                class="d-block d-flex align-items-center gap-2 mt-4 smaller-font text-muted"
-                ><ion-icon name="time-outline"></ion-icon> 7 hours ago
-                <ion-icon name="clipboard-sharp"></ion-icon>Full time
-                <ion-icon name="home"></ion-icon>Remote</span
-              >
-              <p class="mt-2 text-paragraph-color">
-                We are looking for a senior UI UX designer
-                <span class="d-block">for aour design team.</span>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <button
-        class="button rounded-1 font-14px text-light btn gap-2 d-flex align-items-center button-blue mt-5 position-absolute bottom-0 start-50 translate-middle"
-      >
-        EXPLORE MORE <ion-icon name="arrow-forward-outline"></ion-icon>
-      </button>
-    </section>
-
-
-  <!-- updated Footer  -->
-
-
-
-  <footer class="site-footer" id="footer">   
-  
-    </footer>
-
+      </section>
+    </main>
 
     <!-- FOOTER -->
-    <!-- <div style="padding-top: 8rem">
-      <footer class="py-5 container">
+    <div class="footer" style="padding-top: 2rem">
+      <div class="subscribe">
+        <h1 class="text-center font-title text-dark fw-semibold">
+          Join Our Newsletter & Never
+          <span class="d-block">Miss A Great Offer</span>
+        </h1>
+        <p class="p-color font-16px text-center mt-3">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quis
+          culpa quasi officiis porro possimus
+          <span class="d-block">
+            amet tempora aperiam officia tenetur facilis dicta similique.
+          </span>
+        </p>
+
+        <div class="d-flex justify-content-center">
+          <div
+            class="d-flex justify-content-between mt-4 border subscribe-parent"
+            style="width: 24rem"
+          >
+            <input
+              type="email"
+              class="subscribe-email border-0 py-2 px-3"
+              placeholder="Email"
+              size="30"
+            />
+
+            <button class="btn btn-primary rounded-0 w-100">Subscribe</button>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <footer class="py-5 container-xxl">
         <div class="row">
           <div class="col-lg-3 mb-3">
-            <h5 class="fw-bold footer-font-size">ANATOLI SERVICES</h5>
+            <h5 class="fw-bold font-20px text-dark">ANATOLI SERVICES</h5>
             <ul class="nav flex-column">
               <li class="nav-item mb-2 mt-2">
-                <a href="#" class="nav-link font-14px p-0 text-dark"
-                  >Copyrights &copy; 2023</a
-                >
-              </li>
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link font-14px p-0 text-dark"
-                  >All rights reserved</a
+                <a href="#" class="nav-link font-16px p-0 text-dark"
+                  >&copy; 2023. All rights reserved.</a
                 >
               </li>
             </ul>
           </div>
-
           <div class="col-lg-3 mb-3">
-            <h5 class="fw-bold footer-font-size">ABOUT ANATOLI SERVICES</h5>
+            <h5 class="fw-bold font-20px">ABOUT ANATOLI SERVICES</h5>
             <ul class="nav flex-column">
               <li class="nav-item mb-2 mt-2">
-                <a href="#" class="nav-link font-14px p-0 text-dark"
+                <a href="#" class="nav-link font-16px p-0 text-dark"
                   >About Us</a
                 >
               </li>
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link font-14px p-0 text-dark"
+                <a href="#" class="nav-link font-16px p-0 text-dark"
                   >Privacy Policy</a
                 >
               </li>
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link font-14px p-0 text-dark"
+                <a href="#" class="nav-link font-16px p-0 text-dark"
                   >Terms & Condition</a
                 >
               </li>
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link font-14px p-0 text-dark"
+                <a href="#" class="nav-link font-16px p-0 text-dark"
                   >Site Map</a
                 >
               </li>
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link font-14px p-0 text-dark">Help</a>
+                <a href="#" class="nav-link font-16px p-0 text-dark">Help</a>
               </li>
             </ul>
           </div>
-
           <div class="col-lg-3 mb-3">
-            <h5 class="fw-bold footer-font-size">CONNECT WITH ANATOLI</h5>
+            <h5 class="fw-bold font-20px">CONNECT WITH ANATOLI</h5>
             <ul class="nav flex-column">
               <li class="nav-item mb-2 mt-2">
-                <a href="#" class="nav-link font-14px p-0 text-dark">FAQs</a>
+                <a href="#" class="nav-link font-16px p-0 text-dark">FAQs</a>
               </li>
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link font-14px p-0 text-dark"
-                  >Email: anatoliservices@mail.com</a
+                <a href="#" class="nav-link font-16px p-0 text-dark"
+                  >anatoliservices@mail.com</a
                 >
               </li>
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link font-14px p-0 text-dark"
+                <a href="#" class="nav-link font-16px p-0 text-dark"
                   >Chat with us</a
                 >
               </li>
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link font-14px p-0 text-dark"
+                <a href="#" class="nav-link font-16px p-0 text-dark"
                   >Send us inquiry</a
                 >
               </li>
             </ul>
           </div>
-
           <div class="col-lg-3 mb-3 d-flex gap-4 justify-content-center">
             <div class="footer-icons">
               <ion-icon name="logo-facebook"></ion-icon>
@@ -740,17 +584,16 @@
             </div>
           </div>
         </div>
-
         <div class="border-top d-flex justify-content-center">
-          <p class="text-center mt-5 font-14px text-paragraph-color">
+          <p class="text-center mt-5 font-16px text-paragraph-color">
             1717 Harrison St, San Francisco, CA 94103, USA
             <span class="d-block"
-              >© 2022 Your Company. All rights reserved.</span
+              >© 2022 ANATOLI SERVICES. All rights reserved.</span
             >
           </p>
         </div>
       </footer>
-    </div> -->
+    </div>
 
     <!-- BOOTSTRAP CDN -->
     <script

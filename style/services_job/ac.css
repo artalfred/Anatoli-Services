@@ -1,0 +1,18 @@
+.ac {
+  margin-top: 6rem;
+}
+
+.ac-profile {
+  height: 10rem;
+  width: 10rem;
+}
+
+.ac-icon ion-icon {
+  font-size: 1.2rem;
+  color: #198754;
+}
+
+.ac-ratings ion-icon {
+  font-size: 1.2rem;
+  color: #ffb703;
+}

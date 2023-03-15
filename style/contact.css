@@ -1,0 +1,16 @@
+.contact-us {
+  box-shadow: none;
+  background: none !important;
+}
+
+.info {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+input {
+  outline: none !important;
+}
+
+.details ion-icon {
+  color: blue;
+}

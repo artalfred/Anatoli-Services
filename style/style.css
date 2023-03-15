@@ -1,0 +1,404 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Abhaya Libre", serif !important;
+}
+
+button {
+  border: none;
+}
+
+a {
+  padding: 0 !important;
+  text-decoration: none;
+  color: #000;
+}
+
+ul {
+  padding-left: 0 !important;
+}
+
+li {
+  list-style: none;
+}
+
+.btn {
+  border: none !important;
+  padding: 0.7rem 2.2rem;
+}
+
+.button {
+  background-color: #fff;
+  color: #000;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+.btn-trans {
+  background-color: transparent !important;
+  border: 2px solid #fff !important;
+}
+
+.button-trans:hover {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+.font-14px {
+  font-size: 14px;
+}
+
+.font-16px {
+  font-size: 16px;
+}
+
+.font-20px {
+  font-size: 20px;
+}
+
+.font-title {
+  font-size: 2.8rem;
+}
+
+.font-sm-title {
+  font-size: 2.6rem;
+}
+
+.text-color-gray {
+  color: #444444;
+}
+
+.p-color {
+  color: #606060;
+}
+
+.img-box-shadow {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.img-icon {
+  height: 1.6rem;
+}
+
+/* ARROW */
+.arrow ion-icon {
+  font-size: 1.2rem;
+}
+
+/* HOMEPAGE */
+
+nav {
+  padding: 1rem 0rem 1rem 0rem !important;
+}
+
+.container {
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+}
+
+.menu {
+  border: none;
+  box-shadow: none !important;
+}
+
+.menu ion-icon {
+  color: #fff;
+  font-size: 2rem;
+}
+
+/* SECTION 1 */
+.section-1 {
+  height: 55rem;
+  background-image: url(../img/homepage-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  clip-path: polygon(50% 0%, 100% 0, 100% 100%, 52% 92%, 0 68%, 0 0);
+}
+
+.sectin-1-box {
+  height: 20rem;
+  width: 10rem;
+}
+
+/* DROPDOWN */
+.dropdown {
+  padding: 1rem 1rem 0rem 1rem;
+  height: auto;
+  width: 16rem;
+  background-color: #fff;
+  left: 30%;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  display: none;
+  z-index: 2;
+}
+
+.dropdown-bg {
+  padding-left: 1rem;
+}
+
+.dropdown-bg:hover {
+  background-color: #f8f9fa;
+}
+
+.services-mobile {
+  display: none !important;
+}
+
+.dropdown-menu {
+  border: none;
+}
+
+/* SECTION 2 */
+.section-2 {
+  margin-top: 4rem;
+  height: auto;
+}
+
+.offer {
+  margin-top: -10rem;
+}
+
+.card {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  border: none;
+}
+
+.services-parent {
+  margin-top: 4rem;
+}
+
+.services-child {
+  height: auto;
+}
+
+.services-content {
+  margin-top: 4rem;
+  height: 20rem;
+  width: 38rem;
+  position: relative;
+}
+
+.services-title {
+  height: 6rem;
+  width: 100%;
+  background-color: #fff;
+  position: absolute;
+  top: 55%;
+  left: 0rem;
+}
+
+.next ion-icon {
+  font-size: 1.8rem;
+  color: #555;
+}
+
+.section-1-title {
+  font-size: 4.2rem;
+}
+
+/* SECTION 3 */
+.section-3 {
+  margin-top: 4rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.section-3-box {
+  height: 3rem;
+  width: 3.6rem;
+}
+
+.section-3-icons img {
+  height: 1.4rem;
+}
+
+/* ////////////////////////////////////////////// */
+/* SERVICES */
+.navbar-menu ion-icon {
+  color: #000;
+}
+
+.srvcs-job {
+  height: auto;
+}
+
+.srvcs-title {
+  padding-top: 12rem;
+  height: 35rem;
+  background-image: url(../img/services-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.services-job {
+  padding: 2rem 0rem;
+  border-bottom: 2px solid #333;
+}
+
+/* ////////////////////////////////////////////// */
+/* MEDIA QUERY */
+@media (max-width: 1399.98px) {
+  .services-child {
+    margin-left: 2rem;
+  }
+
+  .dropdown {
+    left: 26%;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .nav-bar {
+    margin-left: 4rem !important;
+  }
+
+  .section-1-title {
+    font-size: 3.6rem;
+  }
+
+  .dropdown {
+    left: 28%;
+  }
+}
+
+@media (max-width: 1012.98px) {
+  .nav-bar {
+    margin-left: 2rem !important;
+  }
+
+  .section-1-title {
+    padding: 0rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .nav-bar {
+    margin-left: 0rem !important;
+    position: absolute;
+    top: 6rem;
+    left: 0;
+    width: 100%;
+    padding: 0rem 1rem 1rem 1rem;
+    background: #fff;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+    padding: 1rem 1rem;
+    margin-top: -0.2rem;
+  }
+
+  .nav-link {
+    color: #000 !important;
+  }
+
+  .log-in {
+    color: #000 !important;
+  }
+
+  .nav-button {
+    margin-top: 2rem;
+  }
+
+  .btn-next-prev {
+    display: none !important;
+  }
+
+  .services {
+    display: none !important;
+  }
+
+  .services-mobile {
+    display: block !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .section-3 {
+    margin-top: 0rem;
+    padding-top: 0rem;
+  }
+
+  .section-3-image {
+    justify-content: center;
+  }
+
+  .services-btn {
+    justify-content: start !important;
+  }
+
+  .subscribe {
+    margin-top: 0rem;
+    padding-top: 0rem !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .section-1-title {
+    font-size: 2.8rem;
+  }
+
+  .guide {
+    margin-top: 0rem;
+  }
+}
+
+@media (max-width: 440.98px) {
+  .section-1-title {
+    font-size: 2.4rem;
+  }
+
+  .button {
+    padding: 0.7rem 1.2rem !important;
+  }
+
+  .font-14px {
+    font-size: 12px !important;
+  }
+
+  .section-2 {
+    margin-top: 8rem;
+  }
+
+  .services-child {
+    margin-left: 1rem;
+  }
+
+  .font-title {
+    font-size: 1.8rem !important;
+  }
+}
+
+@media (max-width: 380.98px) {
+  .section-1-title {
+    font-size: 2.2rem;
+  }
+
+  .subscribe-parent {
+    width: 22rem !important;
+  }
+
+  .subscribe-email {
+    width: 12rem;
+  }
+}
+
+@media (max-width: 350.98px) {
+  .section-1-title {
+    font-size: 2rem;
+  }
+
+  .logo {
+    height: 3rem !important;
+  }
+}

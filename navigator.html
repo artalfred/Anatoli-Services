@@ -1,8 +1,12 @@
 <nav class="navbar navbar-expand-lg container-xxl">
   <div class="container-fluid">
-    <a class="navbar-brand text-light fw-bold" href="#"
-      >ANATOLI SERVICES</a
-    >
+    <a class="navbar-brand text-light fw-bold" href="./index.html"
+      ><img
+        class="logo"
+        src="./img/logo.png"
+        alt="logo"
+        style="height: 3.8rem"
+    /></a>
     <button
       class="navbar-toggler menu"
       type="button"
@@ -22,7 +26,7 @@
       <ul class="navbar-nav gap-4">
         <li class="nav-item">
           <a
-            class="nav-link text-light fw-semibold font-14px"
+            class="nav-link text-light fw-semibold font-16px"
             aria-current="page"
             href="#"
             >Home</a
@@ -30,8 +34,8 @@
         </li>
         <li class="nav-item" style="margin-right: -1.8rem">
           <a
-            class="nav-link text-light d-flex align-items-center gap-2 font-14px services"
-            href="#"
+            class="nav-link text-light d-flex align-items-center gap-2 font-16px services"
+            href="./services.html"
             >Services <ion-icon name="chevron-down-outline"></ion-icon
           ></a>
         </li>
@@ -39,7 +43,7 @@
         <!-- DROPDOWN MOBILE -->
         <div class="dropdown-mobile">
           <a
-            class="nav-link text-light d-flex align-items-center gap-2 font-14px services-mobile"
+            class="nav-link text-light d-flex align-items-center gap-2 font-16px services-mobile"
             href="#"
             role="button"
             data-bs-toggle="dropdown"
@@ -52,65 +56,60 @@
           <ul class="dropdown-menu">
             <li style="margin-top: 1.4rem">
               <a
-                class="dropdown-item text-light font-14px border-bottom"
+                class="dropdown-item text-dark font-16px border-bottom"
                 style="width: 11rem"
-                href="#"
-                >Aircon Services</a
+                href="./services_job/Ac.html"
+              >
+                Air Conditioning Repair Services</a
               >
             </li>
             <li style="margin-top: 1.4rem">
               <a
-                class="dropdown-item text-light font-14px border-bottom"
+                class="dropdown-item text-dark font-16px border-bottom"
                 style="width: 11rem"
-                href="#"
+                href="./services_job/gardening.html"
                 >Gardening & Landscpaing</a
               >
             </li>
             <li style="margin-top: 1.4rem">
               <a
-                class="dropdown-item text-light font-14px border-bottom"
+                class="dropdown-item text-dark font-16px border-bottom"
                 style="width: 11rem"
-                href="#"
+                href="./services_job/cleaning.html"
                 >Cleaning Services</a
               >
             </li>
             <li style="margin-top: 1.4rem">
               <a
-                class="dropdown-item text-light font-14px border-bottom"
+                class="dropdown-item text-dark font-16px border-bottom"
                 style="width: 11rem"
-                href="#"
+                href="./services_job/electronics.html"
                 >Electronics Repair</a
-              >
-            </li>
-            <li style="margin-top: 1.4rem">
-              <a
-                class="dropdown-item text-light font-14px border-bottom"
-                style="width: 11rem"
-                href="#"
-                >Other Services</a
               >
             </li>
           </ul>
         </div>
 
         <li class="nav-item">
-          <a class="nav-link text-light font-14px" href="#">Find Jobs</a>
+          <a class="nav-link text-light font-16px" href="#">Find Jobs</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-light font-14px" href="#">Customer</a>
+          <a class="nav-link text-light font-16px" href="#">Customer</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-light font-14px" href="#">Contact Us</a>
+          <a class="nav-link text-light font-16px" href="./contact.html"
+            >Contact Us</a
+          >
         </li>
       </ul>
 
       <div class="d-flex gap-3 nav-button">
         <button
-          class="button rounded-1 font-14px bg-light text-light btn gap-2 button-trans"
+          class="button rounded-1 font-16px bg-light text-light btn gap-2 btn-trans log-in"
         >
           Log in
         </button>
-        <button class="button rounded-1 font-14px">
+        <button class="btn btn-primary px-4 rounded-1 font-16px">
           Create an account
         </button>
       </div>
@@ -118,16 +117,17 @@
   </div>
 </nav>
 
+<!-- DROPDOWN MENU SERVICES -->
 <div class="dropdown position-absolute" id="dropdown">
   <div
     class="position-absolute"
-    style="width: 100%; height: 1.4rem; top: -1.4rem; left: 0rem"
+    style="width: 100%; height: 2.2rem; top: -2.2rem; left: 0rem"
   ></div>
   <div
     class="position-absolute"
     style="
       top: -1rem;
-      left: 2rem;
+      left: 4rem;
       background: #fff;
       height: 1.2rem;
       width: 2rem;
@@ -135,10 +135,20 @@
     "
   ></div>
   <ul class="d-grid">
-    <li class="py-2 dropdown-bg">Aircon Services</li>
-    <li class="py-2 dropdown-bg">Gardening & Landscpaing</li>
-    <li class="py-2 dropdown-bg">Cleaning Services</li>
-    <li class="py-2 dropdown-bg">Electronics Repair</li>
+    <li class="py-2 dropdown-bg">
+      <a href="./services_job/Ac.html"
+        >Air Conditioning Repair Services</a
+      >
+    </li>
+    <li class="py-2 dropdown-bg">
+      <a href="./services_job/gardening.html">Gardening & Landscpaing</a>
+    </li>
+    <li class="py-2 dropdown-bg">
+      <a href="./services_job/cleaning.html">Cleaning Services</a>
+    </li>
+    <li class="py-2 dropdown-bg">
+      <a href="./services_job/electronics.html">Electronics Repair</a>
+    </li>
     <li class="py-2 dropdown-bg">Other Services</li>
   </ul>
 </div>
