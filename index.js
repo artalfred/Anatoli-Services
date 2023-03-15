@@ -31,8 +31,6 @@ dropdown.addEventListener("mouseleave", function () {
   dropdown.style.display = "none";
 });
 
-// SCROLL HORIZONTAL EVENT LISTENER SECTION 2 HOMEPAGE
-
 $(document).ready(function () {
   $.ajax({
     url: "navigator.html",
