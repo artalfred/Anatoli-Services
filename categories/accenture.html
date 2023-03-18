@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- BOOTSTRAP -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap-grid.min.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../style/footer.css" />
+    <link rel="stylesheet" href="../style/categories.css" />
+
+    <!-- GOOGLE FONT -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ICONS -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+
+    <title>Accenture</title>
+  </head>
+  <body style="background-color: #edf6f9">
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg container-xxl">
+      <div class="container-fluid">
+        <a class="navbar-brand text-light fw-bold" href="../index.html"
+          ><img
+            class="logo"
+            src="../img/logo-black.png"
+            alt="logo"
+            style="height: 3.8rem"
+        /></a>
+        <button
+          class="navbar-toggler menu"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-menu">
+            <ion-icon name="menu-outline"></ion-icon>
+          </span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-between nav-bar"
+          id="navbarNavDropdown"
+          style="margin-left: 6rem; z-index: 1"
+        >
+          <ul class="navbar-nav gap-4">
+            <li class="nav-item">
+              <a
+                class="nav-link text-dark fw-semibold font-16px"
+                aria-current="page"
+                href="../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item" style="margin-right: -1.8rem">
+              <a
+                class="nav-link text-dark d-flex align-items-center gap-2 font-16px services"
+                href="../services.html"
+                >Services <ion-icon name="chevron-down-outline"></ion-icon
+              ></a>
+            </li>
+
+            <!-- DROPDOWN MOBILE -->
+            <div class="dropdown-mobile">
+              <a
+                class="nav-link text-light d-flex align-items-center gap-2 font-16px services-mobile"
+                href="./services.html"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                style="margin-top: -1.4rem"
+              >
+                Services <ion-icon name="chevron-down-outline"></ion-icon>
+              </a>
+
+              <ul class="dropdown-menu">
+                <li style="margin-top: 1.4rem">
+                  <a
+                    class="dropdown-item text-dark font-16px border-bottom"
+                    style="width: 11rem"
+                    href="./Ac.html"
+                    >Aircon Services</a
+                  >
+                </li>
+                <li style="margin-top: 1.4rem">
+                  <a
+                    class="dropdown-item text-dark font-16px border-bottom"
+                    style="width: 11rem"
+                    href="./gardening.html"
+                    >Gardening & Landscpaing</a
+                  >
+                </li>
+                <li style="margin-top: 1.4rem">
+                  <a
+                    class="dropdown-item text-dark font-16px border-bottom"
+                    style="width: 11rem"
+                    href="./cleaning.html"
+                    >Cleaning Services</a
+                  >
+                </li>
+                <li style="margin-top: 1.4rem">
+                  <a
+                    class="dropdown-item text-dark font-16px border-bottom"
+                    style="width: 11rem"
+                    href="./electronics.html"
+                    >Electronics Repair</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <li class="nav-item">
+              <a class="nav-link text-dark font-16px" href="../jobs.html"
+                >Find Jobs</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark font-16px" href="../client.html"
+                >Client</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark font-16px" href="../contact.html"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+
+          <div class="d-flex gap-3 nav-button">
+            <a href="../login.html">
+              <button
+                class="button rounded-1 font-16px bg-light text-dark btn gap-2 btn-trans log-in"
+              >
+                Log in
+              </button>
+            </a>
+            <a href="../signup.html">
+              <button class="btn btn-primary px-4 rounded-1 font-16px">
+                Create an account
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- DROPDOWN MENU SERVICES -->
+    <div
+      class="dropdown position-absolute"
+      id="dropdown"
+      style="box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px"
+    >
+      <div
+        class="position-absolute"
+        style="width: 100%; height: 2.3rem; top: -2.2rem; left: 0rem"
+      ></div>
+      <ul class="d-grid">
+        <li class="py-2 dropdown-bg">
+          <a href="../services_job/Ac.html">Air Conditioning Repair Services</a>
+        </li>
+        <li class="py-2 dropdown-bg">
+          <a href="../services_job/gardening.html">Gardening & Landscpaing</a>
+        </li>
+        <li class="py-2 dropdown-bg">
+          <a href="../services_job/cleaning.html">Cleaning Services</a>
+        </li>
+        <li class="py-2 dropdown-bg">
+          <a href="../services_job/electronics.html">Electronics Repair</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- MAIN -->
+    <section class="jobs-info container-xxl font-new-roman">
+      <div class="jobs-child px-4 bg-light">
+        <div class="accenture px-4 position-relative">
+          <a href="">
+            <p class="text-light position-absolute bottom-0">
+              www.accenture.com/ph
+            </p>
+          </a>
+        </div>
+        <div class="d-flex align-items-center mt-3">
+          <div class="section-3-box">
+            <img
+              class="img-fluid"
+              src="../img/icons/accenture.png"
+              alt="accenture"
+              style="height: 2rem"
+            />
+          </div>
+          <div>
+            <h4>Accenture</h4>
+          </div>
+        </div>
+
+        <div class="py-3">
+          <div class="row align-items-center">
+            <div class="col-12 col-md-6">
+              <ul class="d-grid gap-2">
+                <li>
+                  FULLSTACK DEVELOPER (Node, React, Typescript) | Work from Home
+                  | Work onsite
+                </li>
+                <li>Makati City</li>
+                <li>Posted 3 days ago</li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-6 d-flex justify-content-end">
+              <button
+                class="btn btn-warning px-4 rounded-1 font-16px apply_now"
+              >
+                Apply Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="jobs-child mt-3 px-4 py-5 bg-light">
+        <ul class="d-grid gap-2">
+          <li>Job Hightlights</li>
+          <li class="list-bullet">Permanent Day Shift</li>
+          <li class="list-bullet">HMO on Day 1</li>
+          <li class="list-bullet">Allonwances</li>
+        </ul>
+
+        <h6 class="mt-5">Job Description</h6>
+        <p class="mt-5">
+          <span class="fw-bold">Client:</span> A successful, remote-first SaaS
+          product company with operations in Australia and the USA. Their
+          products have significant market penetration and are in use by Fortune
+          500 companies such as Uber, Salesforce and Citrix. They collect,
+          analyse and process over two trillion records every month and own some
+          of the highest traffic websites in the world.
+        </p>
+
+        <span class="fw-bold">Role</span>
+        <p class="mt-3">
+          Due to sustained explosive growth, we've opened multiple positions for
+          Junior to Senior Level Full Stack Developers. You’ll be joining one of
+          our core cross-functional, agile teams working on flagship products.
+          Our culture is key and we defend it religiously. The team you join
+          will be technically outstanding but relaxed and supportive. There's no
+          better place to develop your skills in everything from infrastructure,
+          automation, and AI through to the front-end, design and product.You'll
+          be heard within this team and share ownership of the product you
+          build.
+        </p>
+
+        <ul class="d-grid gap-2">
+          <li class="fw-bold">The tech you'll use</li>
+          <li class="list-bullet">Modern software architecture patternst</li>
+          <li class="list-bullet">Node/React/Typescript</li>
+          <li class="list-bullet">AI Services such as ChatGPT</li>
+          <li class="list-bullet">APIs, Messaging microservices</li>
+          <li class="list-bullet">BDD and TDD testing</li>
+          <li class="list-bullet">CI/CD</li>
+          <li class="list-bullet">AWS/Azure</li>
+          <li class="list-bullet">Databases (NoSQL/PostgreSQL)</li>
+          <li class="list-bullet">Monitoring/logging</li>
+          <li class="list-bullet">Infosec</li>
+        </ul>
+
+        <ul class="d-grid gap-2">
+          <li class="fw-bold">Perks</li>
+          <li class="list-bullet">
+            SaaS product work with full ownership of the product - you build it,
+            you run it.
+          </li>
+          <li class="list-bullet">
+            Flat org structure with the best idea wins culture.
+          </li>
+          <li class="list-bullet">
+            Learn from the very best. Here you'll become a great developer with
+            in demand skills
+          </li>
+        </ul>
+
+        <ul class="d-grid gap-2">
+          <li class="fw-bold">Work Details</li>
+          <li class="list-bullet">
+            Location: Makati / Work from Home Until Further Notice
+          </li>
+          <li class="list-bullet">
+            Schedule: Monday-Friday 6:00 AM to 3:00 PM
+          </li>
+          <li class="list-bullet">Status: Full-time, regular employment</li>
+        </ul>
+
+        <h6 class="mt-5">Additional Information</h6>
+        <div class="row gy-3">
+          <div class="col-12 col-md-6">
+            <span class="fw-bold">Career Level</span>
+            <h6>1-4 Years Experienced Employee</h6>
+          </div>
+          <div class="col-12 col-md-6">
+            <span class="fw-bold">Qualification</span>
+            <h6>Not Specified</h6>
+          </div>
+          <div class="col-12 col-md-6">
+            <span class="fw-bold">Years of Experience</span>
+            <h6>2 years</h6>
+          </div>
+          <div class="col-12 col-md-6">
+            <span class="fw-bold">Job Type</span>
+            <h6>Full-Time</h6>
+          </div>
+          <div class="col-12 col-md-6">
+            <span class="fw-bold">Job Specializations </span>
+            <h6
+              class="text-primary text-decoration-underline"
+              style="cursor: pointer"
+            >
+              Computer/Information Technology, IT-Software
+            </h6>
+          </div>
+        </div>
+        <hr class="mt-5" />
+
+        <div class="mt-5">
+          <h6 class="mt-5">Company Overview</h6>
+          <p class="mt-5">
+            <span class="fw-bold"
+              >Accenture Systems and Technologies Inc (AccentureIT)
+            </span>
+            is a leading offshore IT services which cater Software development,
+            Quality Assurance, Design, Mobile applications, IT Support etc. We
+            also provide various Back Office Support Services.
+          </p>
+
+          <p>
+            With offices in Melbourne, Australia and Makati, Philippines, we aim
+            to help our clients build their handpicked dedicated teams.
+          </p>
+
+          <span class="fw-bold">OUR CORE VALUES</span>
+
+          <ul class="d-grid gap-2 mt-4">
+            <li class="fw-bold">Integrity</li>
+            <li class="list-bullet" style="margin-left: 3rem">
+              We value transparency, accountability, and integrity in everything
+              that we do to provide quality output and excellent results.
+            </li>
+          </ul>
+          <ul class="d-grid gap-2 mt-4">
+            <li class="fw-bold">Diversity</li>
+            <li class="list-bullet" style="margin-left: 3rem">
+              We respect and embrace everyone’s differences; be it race,
+              ethnicity, gender, and other ideologies. We take time to listen
+              and learn from one another.
+            </li>
+          </ul>
+          <ul class="d-grid gap-2 mt-4">
+            <li class="fw-bold">Performance</li>
+            <li class="list-bullet" style="margin-left: 3rem">
+              We are setting the bar high when it comes to performance, we don't
+              do mediocre. We are into pushing ourselves to do better and be
+              better.
+            </li>
+          </ul>
+          <ul class="d-grid gap-2 mt-4">
+            <li class="fw-bold">Innovation</li>
+            <li class="list-bullet" style="margin-left: 3rem">
+              We use innovative processes to add value and continuously excel.
+            </li>
+          </ul>
+          <ul class="d-grid gap-2 mt-4">
+            <li class="fw-bold">Teamwork</li>
+            <li class="list-bullet" style="margin-left: 3rem">
+              We believe in everyone’s capability to collaborate and practice
+              the art of teamwork.
+            </li>
+          </ul>
+        </div>
+
+        <div class="mt-5">
+          <h6>Source Data Description</h6>
+          <a
+            class="text-decoration-underline text-primary"
+            href="https://www.jobstreet.com.ph/en/job-search/devops-engineer-jobs/"
+            >https://www.jobstreet.com.ph/en/job-search/devops-engineer-jobs/</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- //////////////////////////////////////////////////////// -->
+    <!-- FOOTER -->
+    <footer class="footer" style="padding-top: 2rem">
+      <div class="subscribe">
+        <h1 class="text-center font-title text-dark fw-semibold">
+          Join Our Newsletter & Never
+          <span class="d-block">Miss A Great Offer</span>
+        </h1>
+        <p class="p-color font-16px text-center mt-3">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quis
+          culpa quasi officiis porro possimus
+          <span class="d-block">
+            amet tempora aperiam officia tenetur facilis dicta similique.
+          </span>
+        </p>
+
+        <div class="d-flex justify-content-center">
+          <div
+            class="d-flex justify-content-between mt-4 border subscribe-parent"
+            style="width: 24rem"
+          >
+            <input
+              type="email"
+              class="subscribe-email border-0 py-2 px-3"
+              placeholder="Email"
+              size="30"
+            />
+
+            <button class="btn btn-primary rounded-0 w-100">Subscribe</button>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="py-5 container-xxl">
+        <div class="row">
+          <div class="col-lg-3 mb-3">
+            <h5 class="fw-bold font-20px text-dark">ANATOLI SERVICES</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2 mt-2">
+                <a href="#" class="nav-link font-16px p-0 text-dark"
+                  >&copy; 2023. All rights reserved.</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 mb-3">
+            <h5 class="fw-bold font-20px">ABOUT ANATOLI SERVICES</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2 mt-2">
+                <a
+                  href="../footer_links/about_us.html"
+                  class="nav-link font-16px p-0 text-dark"
+                  >About Us</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a
+                  href="../footer_links/privacy.html"
+                  class="nav-link font-16px p-0 text-dark"
+                  >Privacy Policy</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 mb-3">
+            <h5 class="fw-bold font-20px">CONNECT WITH ANATOLI</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2 mt-2">
+                <a
+                  href="../footer_links/faqs.html"
+                  class="nav-link font-16px p-0 text-dark"
+                  >FAQs</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a
+                  href="../contact.html"
+                  class="nav-link font-16px p-0 text-dark"
+                  >Send us inquiry</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 mb-3 d-flex gap-4 justify-content-center">
+            <div class="footer-icons">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </div>
+            <div class="footer-icons">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </div>
+            <div class="footer-icons">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </div>
+            <div class="footer-icons">
+              <ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+          </div>
+        </div>
+        <div class="border-top d-flex justify-content-center">
+          <p class="text-center mt-5 font-16px text-paragraph-color">
+            Dasmariñas Village Association, Inc. (DVA) 1417 Campanilla, Makati,
+            1222 Metro Manila
+            <span class="d-block"
+              >© 2023 ANATOLI SERVICES. All rights reserved.</span
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- BOOTSTRAP CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- LOCAL JAVASCRIPT -->
+    <script src="../index.js"></script>
+  </body>
+</html>

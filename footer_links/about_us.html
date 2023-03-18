@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../style/footer.css" />
+    <link rel="stylesheet" href="../style/footer_links.css" />
+
+    <!-- GOOGLE FONT -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ICONS -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+
+    <title>Services</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg container-xxl">
+      <div class="container-fluid">
+        <a class="navbar-brand text-light fw-bold" href="./index.html"
+          ><img
+            class="logo"
+            src="../img/logo-black.png"
+            alt="logo"
+            style="height: 3.8rem"
+        /></a>
+        <button
+          class="navbar-toggler menu"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-menu">
+            <ion-icon name="menu-outline"></ion-icon>
+          </span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-between nav-bar"
+          id="navbarNavDropdown"
+          style="margin-left: 6rem; z-index: 1"
+        >
+          <ul class="navbar-nav gap-4">
+            <li class="nav-item">
+              <a
+                class="nav-link text-dark fw-semibold font-16px"
+                aria-current="page"
+                href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item" style="margin-right: -1.8rem">
+              <a
+                class="nav-link text-dark d-flex align-items-center gap-2 font-16px services"
+                href="#"
+                >Services <ion-icon name="chevron-down-outline"></ion-icon
+              ></a>
+            </li>
+
+            <!-- DROPDOWN MOBILE -->
+            <div class="dropdown-mobile">
+              <a
+                class="nav-link text-light d-flex align-items-center gap-2 font-16px services-mobile"
+                href="./services.html"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                style="margin-top: -1.4rem"
+              >
+                Services <ion-icon name="chevron-down-outline"></ion-icon>
+              </a>
+
+              <ul class="dropdown-menu">
+                <li style="margin-top: 1.4rem">
+                  <a
+                    class="dropdown-item text-dark font-16px border-bottom"
+                    style="width: 11rem"
+                    href="./services_job/Ac.html"
+                    >Aircon Services</a
+                  >
+                </li>
+                <li style="margin-top: 1.4rem">
+                  <a
+                    class="dropdown-item text-dark font-16px border-bottom"
+                    style="width: 11rem"
+                    href="./services_job/gardening.html"
+                    >Gardening & Landscpaing</a
+                  >
+                </li>
+                <li style="margin-top: 1.4rem">
+                  <a
+                    class="dropdown-item text-dark font-16px border-bottom"
+                    style="width: 11rem"
+                    href="./services_job/cleaning.html"
+                    >Cleaning Services</a
+                  >
+                </li>
+                <li style="margin-top: 1.4rem">
+                  <a
+                    class="dropdown-item text-dark font-16px border-bottom"
+                    style="width: 11rem"
+                    href="./services_job/electronics.html"
+                    >Electronics Repair</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <li class="nav-item">
+              <a class="nav-link text-dark font-16px" href="#">Find Jobs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark font-16px" href="#">Customer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark font-16px" href="./contact.html"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+
+          <div class="d-flex gap-3 nav-button">
+            <a href="./login.html">
+              <button
+                class="button rounded-1 font-16px bg-light text-dark btn gap-2 btn-trans log-in"
+              >
+                Log in
+              </button>
+            </a>
+            <a href="./signup.html">
+              <button class="btn btn-primary px-4 rounded-1 font-16px">
+                Create an account
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- DROPDOWN MENU SERVICES -->
+    <div
+      class="dropdown position-absolute"
+      id="dropdown"
+      style="box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px"
+    >
+      <div
+        class="position-absolute"
+        style="width: 100%; height: 2.3rem; top: -2.2rem; left: 0rem"
+      ></div>
+      <ul class="d-grid">
+        <li class="py-2 dropdown-bg">
+          <a href="./services_job/Ac.html">Air Conditioning Repair Services</a>
+        </li>
+        <li class="py-2 dropdown-bg">
+          <a href="./services_job/gardening.html">Gardening & Landscpaing </a>
+        </li>
+        <li class="py-2 dropdown-bg">
+          <a href="./services_job/cleaning.html">Cleaning Services</a>
+        </li>
+        <li class="py-2 dropdown-bg">
+          <a href="./services_job/electronics.html">Electronics Repair</a>
+        </li>
+        <li class="py-2 dropdown-bg">Other Services</li>
+      </ul>
+    </div>
+
+    <!-- SERVICES -->
+    <section class="about_us container">
+      <h1 class="fw-bold mt-5 text-primary" style="font-size: 3.6rem">
+        About Us
+      </h1>
+      <h6 class="fw-bold font-sm-title">
+        The philippine's work marketplace & service provider
+      </h6>
+      <ul class="list-group gap-4 mt-5">
+        <li class="font-16px font-new-roman">
+          Anatoli Services was founded in 2023 as a small staffing agency and
+          has grown over the years to become a leading provider of workforce
+          solutions. They offer a wide range of staffing services, from
+          temporary staffing to executive search and placement, and have
+          expanded their operations by opening additional offices across the
+          region.
+        </li>
+        <li class="font-16px font-new-roman">
+          They have invested in technology and offer training and development
+          opportunities to their employees. Anatoli Services focuses on
+          delivering customized solutions to meet the unique requirements of
+          their clients and is committed to building long-term partnerships with
+          them. They are a trusted agency that delivers efficient and effective
+          staffing services to businesses of all sizes and industries.
+        </li>
+      </ul>
+
+      <ul class="mt-5 list-group">
+        <li class="fw-bold font-20px font-new-roman">CORE VALUES</li>
+
+        <li class="mt-3 font-16px font-new-roman">Integrity</li>
+        <li class="mt-2 font-16px font-new-roman">
+          Acting with honesty, transparency, and ethics in every step of the
+          placement process. We assure clients and candidates that they can
+          trust the agency to prioritize their best interests and act with
+          integrity in all their interactions.
+        </li>
+
+        <li class="mt-4 font-16px font-new-roman">Excellence</li>
+        <li class="mt-2 font-16px font-new-roman">
+          Commitment to excellence in connecting the right people with the right
+          opportunities and contributing to the success of both job seekers and
+          employers.
+        </li>
+        <li class="mt-4 font-16px font-new-roman">Respect</li>
+        <li class="mt-2 font-16px font-new-roman">
+          We work collaboratively with clients to understand their staffing
+          needs and find solutions that respect the interests of all parties
+          involved.
+        </li>
+        <li class="mt-4 font-16px font-new-roman">Professionalism</li>
+        <li class="mt-2 font-16px font-new-roman">
+          We maintain the highest standards of professionalism in every aspect
+          of its work, from candidate selection to client relations.
+        </li>
+      </ul>
+
+      <h1 class="fw-bold mt-5" style="font-size: 3.6rem">Start your journey</h1>
+      <div class="d-flex gap-3 mt-4">
+        <button class="btn btn-primary">Find Work</button>
+        <button class="btn btn-primary">Provide Services</button>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <div class="footer" style="padding-top: 8rem">
+      <div class="subscribe">
+        <h1 class="text-center font-title text-dark fw-semibold">
+          Join Our Newsletter & Never
+          <span class="d-block">Miss A Great Offer</span>
+        </h1>
+        <p class="p-color font-16px text-center mt-3">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quis
+          culpa quasi officiis porro possimus
+          <span class="d-block">
+            amet tempora aperiam officia tenetur facilis dicta similique.
+          </span>
+        </p>
+
+        <div class="d-flex justify-content-center">
+          <div
+            class="d-flex justify-content-between mt-4 border subscribe-parent"
+            style="width: 24rem"
+          >
+            <input
+              type="email"
+              class="subscribe-email border-0 py-2 px-3"
+              placeholder="Email"
+              size="30"
+            />
+
+            <button class="btn btn-primary rounded-0 w-100">Subscribe</button>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <footer class="py-5 container-xxl">
+        <div class="row">
+          <div class="col-lg-3 mb-3">
+            <h5 class="fw-bold font-20px text-dark">ANATOLI SERVICES</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2 mt-2">
+                <a href="#" class="nav-link font-16px p-0 text-dark"
+                  >&copy; 2023. All rights reserved.</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 mb-3">
+            <h5 class="fw-bold font-20px">ABOUT ANATOLI SERVICES</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2 mt-2">
+                <a href="#" class="nav-link font-16px p-0 text-dark"
+                  >About Us</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link font-16px p-0 text-dark"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link font-16px p-0 text-dark"
+                  >Terms & Condition</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link font-16px p-0 text-dark"
+                  >Site Map</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link font-16px p-0 text-dark">Help</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 mb-3">
+            <h5 class="fw-bold font-20px">CONNECT WITH ANATOLI</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2 mt-2">
+                <a href="#" class="nav-link font-16px p-0 text-dark">FAQs</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link font-16px p-0 text-dark"
+                  >anatoliservices@mail.com</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link font-16px p-0 text-dark"
+                  >Chat with us</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link font-16px p-0 text-dark"
+                  >Send us inquiry</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 mb-3 d-flex gap-4 justify-content-center">
+            <div class="footer-icons">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </div>
+            <div class="footer-icons">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </div>
+            <div class="footer-icons">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </div>
+            <div class="footer-icons">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </div>
+          </div>
+        </div>
+        <div class="border-top d-flex justify-content-center">
+          <p class="text-center mt-5 font-16px text-paragraph-color">
+            1717 Harrison St, San Francisco, CA 94103, USA
+            <span class="d-block"
+              >© 2022 ANATOLI SERVICES. All rights reserved.</span
+            >
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- BOOTSTRAP CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="../index.js"></script>
+  </body>
+</html>

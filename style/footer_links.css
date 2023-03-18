@@ -1,0 +1,26 @@
+.about_us {
+  padding: 2rem 16rem !important;
+  margin-top: 4rem;
+}
+
+.faqs-shadow {
+  box-shadow: none !important;
+}
+
+@media (max-width: 1199.98px) {
+  .about_us {
+    padding: 2rem 10rem !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .about_us {
+    padding: 2rem 4rem !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .about_us {
+    padding: 2rem 1rem !important;
+  }
+}

@@ -16,3 +16,7 @@
   font-size: 1.2rem;
   color: #ffb703;
 }
+
+.profile:hover {
+  background-color: #edf6f9;
+}
