@@ -1,0 +1,53 @@
+.accenture {
+  height: 20rem;
+  width: 100%;
+  background-image: url(../img/categories/1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sandstone {
+  height: 20rem;
+  width: 100%;
+  background-image: url(../img/categories/2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sysgen {
+  height: 20rem;
+  width: 100%;
+  background-image: url(../img/categories/3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.joomla {
+  height: 20rem;
+  width: 100%;
+  background-image: url(../img/categories/4.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ageas {
+  height: 20rem;
+  width: 100%;
+  background-image: url(../img/categories/5.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.toolkit {
+  height: 20rem;
+  width: 100%;
+  background-image: url(../img/categories/6.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

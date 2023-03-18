@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- BOOTSTRAP -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap-grid.min.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../style/footer.css" />
+    <link rel="stylesheet" href="../style/categories.css" />
+
+    <!-- GOOGLE FONT -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ICONS -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+
+    <title>Sysgen</title>
+  </head>
+  <body style="background-color: #edf6f9">
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg container-xxl">
+      <div class="container-fluid">
+        <a class="navbar-brand text-light fw-bold" href="../index.html"
+          ><img
+            class="logo"
+            src="../img/logo-black.png"
+            alt="logo"
+            style="height: 3.8rem"
+        /></a>
+        <button
+          class="navbar-toggler menu"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-menu">
+            <ion-icon name="menu-outline"></ion-icon>
+          </span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-between nav-bar"
+          id="navbarNavDropdown"
+          style="margin-left: 6rem; z-index: 1"
+        >
+          <ul class="navbar-nav gap-4">
+            <li class="nav-item">
+              <a
+                class="nav-link text-dark fw-semibold font-16px"
+                aria-current="page"
+                href="../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item" style="margin-right: -1.8rem">
+              <a
+                class="nav-link text-dark d-flex align-items-center gap-2 font-16px services"
+                href="../services.html"
+                >Services <ion-icon name="chevron-down-outline"></ion-icon
+              ></a>
+            </li>
+
+            <!-- DROPDOWN MOBILE -->
+            <div class="dropdown-mobile">
+              <a
+                class="nav-link text-light d-flex align-items-center gap-2 font-16px services-mobile"
+                href="./services.html"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                style="margin-top: -1.4rem"
+              >
+                Services <ion-icon name="chevron-down-outline"></ion-icon>
+              </a>
+
+              <ul class="dropdown-menu">
+                <li style="margin-top: 1.4rem">
+                  <a
+                    class="dropdown-item text-dark font-16px border-bottom"
+                    style="width: 11rem"
+                    href="./Ac.html"
+                    >Aircon Services</a
+                  >
+                </li>
+                <li style="margin-top: 1.4rem">
+                  <a
+                    class="dropdown-item text-dark font-16px border-bottom"
+                    style="width: 11rem"
+                    href="./gardening.html"
+                    >Gardening & Landscpaing</a
+                  >
+                </li>
+                <li style="margin-top: 1.4rem">
+                  <a
+                    class="dropdown-item text-dark font-16px border-bottom"
+                    style="width: 11rem"
+                    href="./cleaning.html"
+                    >Cleaning Services</a
+                  >
+                </li>
+                <li style="margin-top: 1.4rem">
+                  <a
+                    class="dropdown-item text-dark font-16px border-bottom"
+                    style="width: 11rem"
+                    href="./electronics.html"
+                    >Electronics Repair</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <li class="nav-item">
+              <a class="nav-link text-dark font-16px" href="../jobs.html"
+                >Find Jobs</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark font-16px" href="../client.html"
+                >Client</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark font-16px" href="../contact.html"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+
+          <div class="d-flex gap-3 nav-button">
+            <a href="../login.html">
+              <button
+                class="button rounded-1 font-16px bg-light text-dark btn gap-2 btn-trans log-in"
+              >
+                Log in
+              </button>
+            </a>
+            <a href="../signup.html">
+              <button class="btn btn-primary px-4 rounded-1 font-16px">
+                Create an account
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- DROPDOWN MENU SERVICES -->
+    <div
+      class="dropdown position-absolute"
+      id="dropdown"
+      style="box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px"
+    >
+      <div
+        class="position-absolute"
+        style="width: 100%; height: 2.3rem; top: -2.2rem; left: 0rem"
+      ></div>
+      <ul class="d-grid">
+        <li class="py-2 dropdown-bg">
+          <a href="../services_job/Ac.html">Air Conditioning Repair Services</a>
+        </li>
+        <li class="py-2 dropdown-bg">
+          <a href="../services_job/gardening.html">Gardening & Landscpaing</a>
+        </li>
+        <li class="py-2 dropdown-bg">
+          <a href="../services_job/cleaning.html">Cleaning Services</a>
+        </li>
+        <li class="py-2 dropdown-bg">
+          <a href="../services_job/electronics.html">Electronics Repair</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- MAIN -->
+    <section class="jobs-info container-xxl font-new-roman">
+      <div class="jobs-child px-4 bg-light">
+        <div class="sysgen px-4 position-relative">
+          <a href="">
+            <p class="text-light position-absolute bottom-0">
+              www.Sysgen.com/ph
+            </p>
+          </a>
+        </div>
+        <div class="d-flex align-items-center mt-3">
+          <div class="section-3-box">
+            <img
+              class="img-fluid"
+              src="../img/icons/Sysgen.jfif"
+              alt="accenture"
+              style="height: 2rem"
+            />
+          </div>
+          <div>
+            <h4>Sysgen</h4>
+          </div>
+        </div>
+
+        <div class="py-3">
+          <div class="row align-items-center">
+            <div class="col-12 col-md-6">
+              <ul class="d-grid gap-2">
+                <li>Software Engineer</li>
+                <li>Silkroad Technology Philippines, Inc.</li>
+                <li>Taguig City</li>
+                <li>Posted 2 hours ago</li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-6 d-flex justify-content-end">
+              <button
+                class="btn btn-warning px-4 rounded-1 font-16px apply_now"
+              >
+                Apply Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="jobs-child mt-3 px-4 py-5 bg-light">
+        <ul class="list-group gap-4">
+          <li class="fw-bold">Job Highlights</li>
+          <li class="list-bullet">Flexible work environment</li>
+          <li class="list-bullet">Career Growth Opportunities</li>
+          <li class="list-bullet">Great company culture and people-centric</li>
+        </ul>
+
+        <ul class="list-group mt-5 gap-3">
+          <li class="border-0 bg-light fw-bold">PRIMARY PURPOSE</li>
+          <li>
+            The Software Engineer is responsible for the overall technology and
+            architecture of SilkRoad products and services. As part of the
+            Development team, the Software Engineer IV will be involved in the
+            design, coding, unit testing, code review, and own the architecture
+            of SilkRoad services and applications.
+          </li>
+        </ul>
+
+        <ul class="list-group mt-5 gap-3">
+          <li class="border-0 bg-light fw-bold">REQUIREMENTS:</li>
+          <li>
+            All employees of SilkRoad are expected to use good business judgment
+            and appropriate discretion and decision making while performing
+            responsibilities of the position.
+          </li>
+          <li class="list-bullet">
+            Owns cross-team shared technology and architecture.
+          </li>
+          <li class="list-bullet">
+            Works with head of development to choose new technologies and
+            promote culture/process.
+          </li>
+          <li class="list-bullet">
+            Does serious research to evaluate and test options.
+          </li>
+          <li class="list-bullet">
+            Understands implications (and trade-offs) of reliability,
+            scalability, operational costs, ease of adoption by organization,
+            recruiting, etc.
+          </li>
+          <li class="list-bullet">
+            Evaluate system-wide platform decisions and set long-term
+            company-wide technical strategy.
+          </li>
+          <li class="list-bullet">
+            Potentially work both as individual contributors on a feature team
+            and as architectural reviewers working with the head of development.
+          </li>
+          <li>
+            The responsibilities listed above are representative of the main
+            duties; other duties may be assigned or altered based on business
+            need.
+          </li>
+        </ul>
+
+        <ul class="list-group mt-5 gap-3">
+          <li class="border-0 bg-light fw-bold">COMPETENCIES & SKILLS</li>
+          <li class="fw-bold">Core Competencies & Skills:</li>
+          <li class="list-bullet">
+            Results driven, highly engaged professional; uses discretionary
+            effort to meet/exceed desired results in a fast paced environment.
+          </li>
+          <li class="list-bullet">
+            Passionate team member; collaborative; cultivates an energizing
+            environment and is committed to team success.
+          </li>
+          <li class="list-bullet">
+            Supports culture of customer appreciation; plays an active role in
+            creating a positive customer experience.
+          </li>
+          <li class="list-bullet">
+            Demonstrates effective communication and interpersonal skills.
+          </li>
+          <li class="list-bullet">
+            Possesses appropriate knowledge and skills; understands company,
+            process, products, job duties, and necessary work methods.
+          </li>
+          <li class="list-bullet">
+            Contributes to a climate of innovation and continuous improvement to
+            achieve excellence.
+          </li>
+          <li class="list-bullet">
+            Demonstrates personal excellence, integrity and accountability.
+          </li>
+          <li class="list-bullet">
+            Identifies ways to continuously improve own and/or company
+            performance.
+          </li>
+        </ul>
+
+        <ul class="list-group mt-5 gap-3">
+          <li class="fw-bold">Job Specific Competencies & Skills:</li>
+          <li class="list-bullet">
+            Proficient with cloud software development and agile development
+            practices.
+          </li>
+          <li class="list-bullet">Knowledge of cloud platforms.</li>
+          <li class="list-bullet">
+            Experience with a variety of technology areas.
+          </li>
+          <li class="list-bullet">
+            Ability to work independently between periodic check-ins.
+          </li>
+          <li class="list-bullet">
+            Estimates timelines effectively; identifies and communicates
+            roadblocks in timely manner; takes operational excellence seriously.
+          </li>
+          <li class="list-bullet">
+            Understands implications (and trade-offs) of reliability,
+            scalability, operational costs, ease of adoption by organization,
+            recruiting, etc.
+          </li>
+          <li class="list-bullet">
+            Can evaluate system-wide platform decisions and set long-term
+            company-wide technical strategy.
+          </li>
+          <li class="list-bullet">
+            Has deep technical expertise in business-critical areas.
+          </li>
+          <li class="list-bullet">
+            Experience working well with senior leadership.
+          </li>
+          <li class="list-bullet">
+            Ability to identify and positively encourage areas of growth and
+            improvement within assigned team.
+          </li>
+          <li class="list-bullet">
+            Ability to engage team members at all levels and maintain open
+            communication stream.
+          </li>
+        </ul>
+
+        <ul class="list-group mt-5 gap-3">
+          <li class="fw-bold">EDUCATION & EXPERIENCE</li>
+          <li class="list-bullet">
+            Minimum 10 years’ experience developing commercial software in a
+            cloud environment.
+          </li>
+          <li class="list-bullet">
+            Minimum of 8 years’ experience developing independently in a variety
+            of technology areas and owning functional areas.
+          </li>
+          <li class="list-bullet">
+            Experience with Microsoft stack (C#, SQL Server, ASP.NET)
+          </li>
+          <li class="list-bullet">Experience with React, Node, Angular</li>
+          <li class="list-bullet">
+            Experience with agile development practices like Scrum and Kanban
+          </li>
+          <li class="list-bullet">
+            Bachelor's degree in Computer Science or other technical discipline,
+            or equivalent experience.
+          </li>
+        </ul>
+
+        <h6 class="mt-5">Additional Information</h6>
+        <div class="row gy-3">
+          <div class="col-12 col-md-6">
+            <span class="fw-bold">Career Level</span>
+            <h6>1-4 Years Experienced Employee</h6>
+          </div>
+          <div class="col-12 col-md-6">
+            <span class="fw-bold">Qualification</span>
+            <h6>
+              High School Diploma, Vocational Diploma/Short Course Certificate,
+              Bachelor's/College Degree
+            </h6>
+          </div>
+          <div class="col-12 col-md-6">
+            <span class="fw-bold">Years of Experience</span>
+            <h6>2 years</h6>
+          </div>
+          <div class="col-12 col-md-6">
+            <span class="fw-bold">Job Type</span>
+            <h6>Full-Time</h6>
+          </div>
+          <div class="col-12 col-md-6">
+            <span class="fw-bold">Job Specializations </span>
+            <h6
+              class="text-primary text-decoration-underline"
+              style="cursor: pointer"
+            >
+              Computer/Information Technology, IT-Software
+            </h6>
+          </div>
+        </div>
+        <hr class="mt-5" />
+
+        <div class="mt-5">
+          <h6 class="mt-5">Company Overview</h6>
+          <ul class="list-group gap-4 mt-5">
+            <li>
+              <span class="fw-bold">Sysgen</span> is a leading global provider
+              of cloud-based, end-to-end talent management solutions. The
+              award-winning SilkRoad Life Suite includes Talent Acquisition,
+              Talent Development, and HRMS solutions that are delivered through
+              a tablet-friendly Talent Portal. The suite is easy to deploy and
+              use - a single platform to rapidly boost employee engagement and
+              business performance.
+            </li>
+            <li class="fw-semibold">
+              Discover a work experience where diverse ideas are met with
+              enthusiasm and where you can watch those ideas become reality.
+              Talented, motivated and creative people thrive here. If you thrive
+              on interesting projects, fast-paced activities and being at the
+              forefront of transforming an industry, we want to talk to you.
+            </li>
+            <li>
+              Sysgen recognizes our mission of enabling people to thrive in a
+              changing workplace would not be possible without proactive
+              measures of equity for all people. Qualified applicants will be
+              considered for employment without regard to race, color, religion,
+              national origin, age, sex, sexual orientation, gender identity and
+              expression, marital or domestic partner status, physical or mental
+              disability, military or veteran status, genetic information or any
+              other protected class.
+            </li>
+            <li>
+              Join us and be part of a team that is transforming the employee
+              experience for companies across the globe, values innovative
+              thinking and diverse opinions, prioritizes equity and inclusion,
+              and encourages employees to be their authentic selves.
+            </li>
+          </ul>
+
+          <h6 class="mt-5">Additional Information</h6>
+          <div class="row gy-3">
+            <div class="col-12 col-md-6">
+              <span class="fw-bold">Company Size</span>
+              <h6>1 - 100 Employees</h6>
+            </div>
+            <div class="col-12 col-md-6">
+              <span class="fw-bold">Registration No.</span>
+              <h6>CS201312073</h6>
+            </div>
+            <div class="col-12 col-md-6">
+              <span class="fw-bold">Industry </span>
+              <h6>Computer / Information Technology (Software)</h6>
+            </div>
+            <div class="col-12 col-md-6">
+              <span class="fw-bold">Benefits & Others</span>
+              <h6>
+                Dental, Medical, Business (e.g. Shirts), Insurance, HMO and
+                Dental, Medical and Rice Allowance, Regular hours, Mid shift and
+                Night shift
+              </h6>
+            </div>
+            <div class="col-12 col-md-6">
+              <span class="fw-bold">Specific Location</span>
+              <h6 style="cursor: pointer">BGC</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-5">
+          <h6>Source Data Description</h6>
+          <a
+            class="text-decoration-underline text-primary"
+            href="https://www.jobstreet.com.ph/en/job-search/software-engineer-jobs/"
+            >https://www.jobstreet.com.ph/en/job-search/software-engineer-jobs/</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- //////////////////////////////////////////////////////// -->
+    <!-- FOOTER -->
+    <footer class="footer" style="padding-top: 2rem">
+      <div class="subscribe">
+        <h1 class="text-center font-title text-dark fw-semibold">
+          Join Our Newsletter & Never
+          <span class="d-block">Miss A Great Offer</span>
+        </h1>
+        <p class="p-color font-16px text-center mt-3">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quis
+          culpa quasi officiis porro possimus
+          <span class="d-block">
+            amet tempora aperiam officia tenetur facilis dicta similique.
+          </span>
+        </p>
+
+        <div class="d-flex justify-content-center">
+          <div
+            class="d-flex justify-content-between mt-4 border subscribe-parent"
+            style="width: 24rem"
+          >
+            <input
+              type="email"
+              class="subscribe-email border-0 py-2 px-3"
+              placeholder="Email"
+              size="30"
+            />
+
+            <button class="btn btn-primary rounded-0 w-100">Subscribe</button>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="py-5 container-xxl">
+        <div class="row">
+          <div class="col-lg-3 mb-3">
+            <h5 class="fw-bold font-20px text-dark">ANATOLI SERVICES</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2 mt-2">
+                <a href="#" class="nav-link font-16px p-0 text-dark"
+                  >&copy; 2023. All rights reserved.</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 mb-3">
+            <h5 class="fw-bold font-20px">ABOUT ANATOLI SERVICES</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2 mt-2">
+                <a
+                  href="../footer_links/about_us.html"
+                  class="nav-link font-16px p-0 text-dark"
+                  >About Us</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a
+                  href="../footer_links/privacy.html"
+                  class="nav-link font-16px p-0 text-dark"
+                  >Privacy Policy</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 mb-3">
+            <h5 class="fw-bold font-20px">CONNECT WITH ANATOLI</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2 mt-2">
+                <a
+                  href="../footer_links/faqs.html"
+                  class="nav-link font-16px p-0 text-dark"
+                  >FAQs</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a
+                  href="../contact.html"
+                  class="nav-link font-16px p-0 text-dark"
+                  >Send us inquiry</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 mb-3 d-flex gap-4 justify-content-center">
+            <div class="footer-icons">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </div>
+            <div class="footer-icons">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </div>
+            <div class="footer-icons">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </div>
+            <div class="footer-icons">
+              <ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+          </div>
+        </div>
+        <div class="border-top d-flex justify-content-center">
+          <p class="text-center mt-5 font-16px text-paragraph-color">
+            Dasmariñas Village Association, Inc. (DVA) 1417 Campanilla, Makati,
+            1222 Metro Manila
+            <span class="d-block"
+              >© 2023 ANATOLI SERVICES. All rights reserved.</span
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- BOOTSTRAP CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- LOCAL JAVASCRIPT -->
+    <script src="../index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- BOOTSTRAP -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap-grid.min.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../style/footer.css" />
+    <link rel="stylesheet" href="../style/categories.css" />
+
+    <!-- GOOGLE FONT -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ICONS -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+
+    <title>Joomla</title>
+  </head>
+  <body style="background-color: #edf6f9">
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg container-xxl">
+      <div class="container-fluid">
+        <a class="navbar-brand text-light fw-bold" href="../index.html"
+          ><img
+            class="logo"
+            src="../img/logo-black.png"
+            alt="logo"
+            style="height: 3.8rem"
+        /></a>
+        <button
+          class="navbar-toggler menu"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-menu">
+            <ion-icon name="menu-outline"></ion-icon>
+          </span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-between nav-bar"
+          id="navbarNavDropdown"
+          style="margin-left: 6rem; z-index: 1"
+        >
+          <ul class="navbar-nav gap-4">
+            <li class="nav-item">
+              <a
+                class="nav-link text-dark fw-semibold font-16px"
+                aria-current="page"
+                href="../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item" style="margin-right: -1.8rem">
+              <a
+                class="nav-link text-dark d-flex align-items-center gap-2 font-16px services"
+                href="../services.html"
+                >Services <ion-icon name="chevron-down-outline"></ion-icon
+              ></a>
+            </li>
+
+            <!-- DROPDOWN MOBILE -->
+            <div class="dropdown-mobile">
+              <a
+                class="nav-link text-light d-flex align-items-center gap-2 font-16px services-mobile"
+                href="./services.html"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                style="margin-top: -1.4rem"
+              >
+                Services <ion-icon name="chevron-down-outline"></ion-icon>
+              </a>
+
+              <ul class="dropdown-menu">
+                <li style="margin-top: 1.4rem">
+                  <a
+                    class="dropdown-item text-dark font-16px border-bottom"
+                    style="width: 11rem"
+                    href="./Ac.html"
+                    >Aircon Services</a
+                  >
+                </li>
+                <li style="margin-top: 1.4rem">
+                  <a
+                    class="dropdown-item text-dark font-16px border-bottom"
+                    style="width: 11rem"
+                    href="./gardening.html"
+                    >Gardening & Landscpaing</a
+                  >
+                </li>
+                <li style="margin-top: 1.4rem">
+                  <a
+                    class="dropdown-item text-dark font-16px border-bottom"
+                    style="width: 11rem"
+                    href="./cleaning.html"
+                    >Cleaning Services</a
+                  >
+                </li>
+                <li style="margin-top: 1.4rem">
+                  <a
+                    class="dropdown-item text-dark font-16px border-bottom"
+                    style="width: 11rem"
+                    href="./electronics.html"
+                    >Electronics Repair</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <li class="nav-item">
+              <a class="nav-link text-dark font-16px" href="../jobs.html"
+                >Find Jobs</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark font-16px" href="../client.html"
+                >Client</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark font-16px" href="../contact.html"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+
+          <div class="d-flex gap-3 nav-button">
+            <a href="../login.html">
+              <button
+                class="button rounded-1 font-16px bg-light text-dark btn gap-2 btn-trans log-in"
+              >
+                Log in
+              </button>
+            </a>
+            <a href="../signup.html">
+              <button class="btn btn-primary px-4 rounded-1 font-16px">
+                Create an account
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- DROPDOWN MENU SERVICES -->
+    <div
+      class="dropdown position-absolute"
+      id="dropdown"
+      style="box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px"
+    >
+      <div
+        class="position-absolute"
+        style="width: 100%; height: 2.3rem; top: -2.2rem; left: 0rem"
+      ></div>
+      <ul class="d-grid">
+        <li class="py-2 dropdown-bg">
+          <a href="../services_job/Ac.html">Air Conditioning Repair Services</a>
+        </li>
+        <li class="py-2 dropdown-bg">
+          <a href="../services_job/gardening.html">Gardening & Landscpaing</a>
+        </li>
+        <li class="py-2 dropdown-bg">
+          <a href="../services_job/cleaning.html">Cleaning Services</a>
+        </li>
+        <li class="py-2 dropdown-bg">
+          <a href="../services_job/electronics.html">Electronics Repair</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- MAIN -->
+    <section class="jobs-info container-xxl font-new-roman">
+      <div class="jobs-child px-4 bg-light">
+        <div class="joomla px-4 position-relative">
+          <a href="">
+            <p class="text-light position-absolute bottom-0">www.joomla.com</p>
+          </a>
+        </div>
+        <div class="d-flex align-items-center mt-3">
+          <div class="section-3-box">
+            <img
+              class="img-fluid"
+              src="../img/icons/joomla.png"
+              alt="accenture"
+              style="height: 2rem"
+            />
+          </div>
+          <div>
+            <h4>Joomla</h4>
+          </div>
+        </div>
+
+        <div class="py-3">
+          <div class="row align-items-center">
+            <div class="col-12 col-md-6">
+              <ul class="d-grid gap-2">
+                <li>Assistant Store Supervisor (AYALA CEBU)</li>
+                <li>Cebu (Cebu City)</li>
+                <li>PHP 22,000 - PHP 25,000</li>
+                <li>Posted 16 hours ago</li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-6 d-flex justify-content-end">
+              <button
+                class="btn btn-warning px-4 rounded-1 font-16px apply_now"
+              >
+                Apply Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="jobs-child mt-3 px-4 py-5 bg-light">
+        <ul class="d-grid gap-2">
+          <li>Job Hightlights</li>
+          <li class="list-bullet">Competitive salary and benefits package</li>
+          <li class="list-bullet">Excellent work environment and culture</li>
+          <li class="list-bullet">
+            Outstanding career development opportunities
+          </li>
+        </ul>
+
+        <h6 class="mt-5">Job Description</h6>
+        <p class="mt-2">
+          Supervises operations of the assigned branch through Sales
+          Achievements, Customer Experience, People Development and Process
+          Improvement
+        </p>
+
+        <ul class="d-grid gap-2">
+          <li class="fw-bold">Role and Responsibilities</li>
+          <li class="list-bullet">
+            Ensures smooth Store operations and Customer experience journey.
+          </li>
+          <li class="list-bullet">
+            Conducts performance reviews and talent development plan.
+          </li>
+          <li class="list-bullet">
+            Develops a learning culture by initiating and recommending
+            trainings, seminars and workshops.
+          </li>
+        </ul>
+
+        <ul class="d-grid gap-2">
+          <li class="fw-bold">Store Operations</li>
+          <li class="list-bullet">
+            Implements Sales plans and strategies to achieve monthly target.
+          </li>
+          <li class="list-bullet">
+            Coordinates and communicates Marketing promos and discounts to Team
+            Members.
+          </li>
+          <li class="list-bullet">
+            Understands both the product and service needs for both walk-ins and
+            enterprise Clients.
+          </li>
+          <li class="list-bullet">
+            Monitors and ensures availability of the products carried by the
+            Branch.
+          </li>
+          <li class="list-bullet">
+            Safeguards store operations by strict implementation of programs,
+            operational policies and procedures.
+          </li>
+          <li class="list-bullet">
+            Identifies and adapts to current and future customer needs and
+            requirements.
+          </li>
+          <li class="list-bullet">
+            Protects Employees and Customers by ensuring a safe and clean Store
+            environment.
+          </li>
+          <li class="list-bullet">
+            Reinforces confidentiality and security of files and database.
+          </li>
+          <li class="list-bullet">
+            Protects the image and interest of the Company at all times.
+          </li>
+          <li class="list-bullet">
+            Performs other related tasks that may be assigned from time to time.
+          </li>
+        </ul>
+
+        <ul class="d-grid gap-2">
+          <li class="fw-bold">Job Requirements</li>
+          <li class="fw-bold">Education/Experience</li>
+          <li>University Degree of any four-year Business course.</li>
+          <li>
+            At least 3 years of experience as a Supervisor preferably in a
+            Retail industry.
+          </li>
+          <li>Strong Leadership, Planning and Decision-Making Skills.</li>
+          <li>Negotiation and Customer Service Skills.</li>
+          <li>Able to work in a fast-paced environment.</li>
+          <li>Flexible and keen to details.</li>
+          <li>
+            Willing to be assign in
+            <span class="fw-bold">AYALA MALL CEBU CITY</span>
+          </li>
+        </ul>
+
+        <ul class="d-grid gap-2">
+          <li class="fw-bold">Work Details</li>
+          <li class="list-bullet">
+            Location: Makati / Work from Home Until Further Notice
+          </li>
+          <li class="list-bullet">
+            Schedule: Monday-Friday 6:00 AM to 3:00 PM
+          </li>
+          <li class="list-bullet">Status: Full-time, regular employment</li>
+        </ul>
+
+        <h6 class="mt-5">Additional Information</h6>
+        <div class="row gy-3">
+          <div class="col-12 col-md-6">
+            <span class="fw-bold">Career Level </span>
+            <h6>Supervisor/5 Years & Up Experienced Employee</h6>
+          </div>
+          <div class="col-12 col-md-6">
+            <span class="fw-bold">Qualification</span>
+            <h6>Bachelor's/College Degree</h6>
+          </div>
+          <div class="col-12 col-md-6">
+            <span class="fw-bold">Years of Experience</span>
+            <h6>3 years</h6>
+          </div>
+          <div class="col-12 col-md-6">
+            <span class="fw-bold">Job Type</span>
+            <h6>Full-Time</h6>
+          </div>
+          <div class="col-12 col-md-6">
+            <span class="fw-bold">Job Specializations </span>
+            <h6
+              class="text-primary text-decoration-underline"
+              style="cursor: pointer"
+            >
+              Sales/Marketing, Retail Sales
+            </h6>
+          </div>
+        </div>
+        <hr class="mt-5" />
+
+        <div class="mt-5">
+          <h6 class="mt-5">Company Overview</h6>
+          <ul class="d-grid gap-2 mt-5">
+            <li>CAREER not just employment</li>
+            <li>SUCCESS and SIGNIFICANCE</li>
+            <li>We are not employees. We are TALENTS.</li>
+            <li>Pursuing EXCELLENCE and HUMILITY.</li>
+            <li>With sense of MASTERY, ACCOUNTABILITY and PURPOSE.</li>
+          </ul>
+
+          <ul class="d-grid gap-2 mt-5">
+            <li class="fw-bold">About the company</li>
+            <li class="mt-2">
+              Established in August 1994, Power Mac Center is a recognized Apple
+              Premium Reseller and an Apple Authorized Service Provider in the
+              Philippines. With 23 years of experience in the Apple business,
+              Power
+            </li>
+            <li>
+              Mac Center has become a reliable retail shop and service provider
+              of Apple products to the Filipino consumer.
+            </li>
+          </ul>
+
+          <ul class="d-grid gap-2 mt-5">
+            <li class="fw-bold">Our Vision</li>
+            <li class="mt-2">
+              Providing products and experiences that touch and empower lives.
+            </li>
+          </ul>
+          <ul class="d-grid gap-2 mt-5">
+            <li class="fw-bold">Our Mission</li>
+            <li class="mt-2">
+              Transforming individuals, homes, and communities through lifestyle
+              innovations.
+            </li>
+          </ul>
+        </div>
+
+        <div class="mt-5">
+          <h6>Source Data Description</h6>
+          <a
+            class="text-decoration-underline text-primary"
+            href="https://www.jobstreet.com.ph/en/job/12840519?JASRC=JCLHPLO&itemIndex=0&correlationName=last-search-jobs&fr=Homepage%20-%20Based%20on%20your%20last%20search&token=0~49af18ed-245c-4335-bc33-1c3e198bdf81"
+            >https://www.jobstreet.com.ph/en/job/12840519?JASRC=JCLHPLO&itemIndex=0&correlationName=last-search-jobs&fr=Homepage%20-%20Based%20on%20your%20last%20search&token=0~49af18ed-245c-4335-bc33-1c3e198bdf81</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- //////////////////////////////////////////////////////// -->
+    <!-- FOOTER -->
+    <footer class="footer" style="padding-top: 2rem">
+      <div class="subscribe">
+        <h1 class="text-center font-title text-dark fw-semibold">
+          Join Our Newsletter & Never
+          <span class="d-block">Miss A Great Offer</span>
+        </h1>
+        <p class="p-color font-16px text-center mt-3">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quis
+          culpa quasi officiis porro possimus
+          <span class="d-block">
+            amet tempora aperiam officia tenetur facilis dicta similique.
+          </span>
+        </p>
+
+        <div class="d-flex justify-content-center">
+          <div
+            class="d-flex justify-content-between mt-4 border subscribe-parent"
+            style="width: 24rem"
+          >
+            <input
+              type="email"
+              class="subscribe-email border-0 py-2 px-3"
+              placeholder="Email"
+              size="30"
+            />
+
+            <button class="btn btn-primary rounded-0 w-100">Subscribe</button>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="py-5 container-xxl">
+        <div class="row">
+          <div class="col-lg-3 mb-3">
+            <h5 class="fw-bold font-20px text-dark">ANATOLI SERVICES</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2 mt-2">
+                <a href="#" class="nav-link font-16px p-0 text-dark"
+                  >&copy; 2023. All rights reserved.</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 mb-3">
+            <h5 class="fw-bold font-20px">ABOUT ANATOLI SERVICES</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2 mt-2">
+                <a
+                  href="../footer_links/about_us.html"
+                  class="nav-link font-16px p-0 text-dark"
+                  >About Us</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a
+                  href="../footer_links/privacy.html"
+                  class="nav-link font-16px p-0 text-dark"
+                  >Privacy Policy</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 mb-3">
+            <h5 class="fw-bold font-20px">CONNECT WITH ANATOLI</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2 mt-2">
+                <a
+                  href="../footer_links/faqs.html"
+                  class="nav-link font-16px p-0 text-dark"
+                  >FAQs</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a
+                  href="../contact.html"
+                  class="nav-link font-16px p-0 text-dark"
+                  >Send us inquiry</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 mb-3 d-flex gap-4 justify-content-center">
+            <div class="footer-icons">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </div>
+            <div class="footer-icons">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </div>
+            <div class="footer-icons">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </div>
+            <div class="footer-icons">
+              <ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+          </div>
+        </div>
+        <div class="border-top d-flex justify-content-center">
+          <p class="text-center mt-5 font-16px text-paragraph-color">
+            Dasmariñas Village Association, Inc. (DVA) 1417 Campanilla, Makati,
+            1222 Metro Manila
+            <span class="d-block"
+              >© 2023 ANATOLI SERVICES. All rights reserved.</span
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- BOOTSTRAP CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- LOCAL JAVASCRIPT -->
+    <script src="../index.js"></script>
+  </body>
+</html>
