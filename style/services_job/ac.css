@@ -18,5 +18,24 @@
 }
 
 .profile:hover {
+  cursor: pointer;
   background-color: #edf6f9;
+}
+
+.profile_scroll {
+  overflow-y: scroll;
+  height: 60rem;
+}
+
+.profile_scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.profile-info-scroll {
+  overflow-y: scroll;
+  height: 30rem;
+}
+
+.profile-info-scroll::-webkit-scrollbar {
+  display: none;
 }
